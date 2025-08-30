@@ -10,38 +10,76 @@ Create a tabletop RPG that combines:
 ## Development Phases
 
 ### Phase 1: Core System Design ⚙️
-**Timeline: Weeks 1-4**
+**Timeline: Weeks 1-8 (Extended)**
 
-#### 1.1 Define Core Mechanics
-- [ ] Design pool system (Might/Speed/Intellect) with edge mechanics
+#### 1.1 Combat & Core Mechanics (CRITICAL)
+- [x] Design pool system (Six D&D attributes) with flexible point spending
+- [x] Create critical injury system (Year Zero Engine inspired)
 - [ ] Create simplified tactical grid system (close/near/far zones vs feet/meters)
 - [ ] Establish dice mechanics (d20 + pool spending for difficulty reduction)
 - [ ] Define action economy (action, move, bonus action simplified)
+- [ ] Design initiative system (DEX/Speed pool based)
+- [ ] Create attack resolution mechanics
+- [ ] Define defense and armor rules
+- [ ] Establish conditions system (stunned, prone, grappled, etc.)
 
-#### 1.2 Character Framework
-- [ ] Design hybrid class system (D&D archetypes + Cypher descriptors/foci)
-- [ ] Create comprehensive skill system (D&D 5e proficiency + Cypher training)
-- [ ] Define 20-level progression with meaningful choices each level
-- [ ] Establish pool-to-traditional attribute relationships
+#### 1.2 Skills & Abilities System (Year Zero Engine Core)
+- [ ] Create comprehensive skill list with pool associations
+- [ ] Define specialties/proficiency system (untrained/trained/expert)
+- [ ] Design skill challenge mechanics
+- [ ] Establish group skill check rules
+- [ ] Create opposed skill resolution
 
-#### 1.3 Combat System
-- [ ] Design zone-based movement (no measuring distances)
-- [ ] Create tactical positioning mechanics (flanking, cover, etc.)
-- [ ] Define initiative system (Speed pool based)
-- [ ] Establish conditions and status effects
+#### 1.3 Character Framework
+- [ ] Design hybrid class system (D&D archetypes + pool specialization)
+- [ ] Define starting pool distributions by class
+- [ ] Create 20-level progression with meaningful choices each level
+- [ ] Design background system
+- [ ] Create step-by-step character creation guide
 
-### Phase 2: Rules Documentation 📚
-**Timeline: Weeks 5-8**
+#### 1.4 Equipment & Magic Foundation
+- [ ] Create weapon list (melee/ranged) with pool damage
+- [ ] Design armor and shield system
+- [ ] Define basic tools and equipment
+- [ ] Create spell casting mechanics using pools
+- [ ] Establish concentration and spell interruption rules
 
-#### 2.1 Player Materials
+### Phase 2: Complete Game Systems 🎲
+**Timeline: Weeks 9-14**
+
+#### 2.1 Magic System (Year Zero Engine Style)
+- [ ] Create spell lists by class/focus
+- [ ] Design ritual casting mechanics
+- [ ] Establish magical item rules
+- [ ] Create spell failure and corruption tables
+- [ ] Define magical healing vs natural recovery
+
+#### 2.2 Travel & Exploration (Year Zero Engine Core)
+- [ ] Design zone-based travel mechanics
+- [ ] Create environmental hazards and weather
+- [ ] Establish survival and resource management rules
+- [ ] Design exploration encounters
+- [ ] Create travel montage mechanics
+
+#### 2.3 Social Interaction & Downtime (D&D 5e Style)
+- [ ] Design social encounter mechanics
+- [ ] Create reputation and relationship systems
+- [ ] Establish downtime activities
+- [ ] Design organization and faction rules
+- [ ] Create social conflict resolution
+
+### Phase 3: Rules Documentation 📚
+**Timeline: Weeks 15-20**
+
+#### 3.1 Player Materials
 - [ ] Write Player's Handbook
   - Character creation step-by-step
   - Core mechanics explanation
   - Combat rules and examples
   - Complete skill and ability descriptions
-  - Equipment and advancement
+  - Equipment, magic, and advancement
 
-#### 2.2 Game Master Materials
+#### 3.2 Game Master Materials
 - [ ] Write Game Master's Guide
   - GM intrusions and narrative control
   - Encounter building guidelines
@@ -49,26 +87,26 @@ Create a tabletop RPG that combines:
   - NPC/Monster creation rules
   - Adventure design principles
 
-### Phase 3: World Building 🌍
-**Timeline: Weeks 9-12**
+### Phase 4: World Building 🌍
+**Timeline: Weeks 21-26**
 
-#### 3.1 Setting Creation
+#### 4.1 Setting Creation
 - [ ] Define genre and tone (fantasy, sci-fi, modern, etc.)
 - [ ] Create world overview and history
 - [ ] Design key locations and regions
 - [ ] Establish major factions and conflicts
 - [ ] Develop cultural and social structures
 
-#### 3.2 Starter Content
+#### 4.2 Starter Content
 - [ ] Write complete one-shot adventure (4-6 hour session)
 - [ ] Design balanced encounters for new system
 - [ ] Create 4-6 pre-generated characters
 - [ ] Prepare adventure hooks and expansion ideas
 
-### Phase 4: Digital Implementation 💻
-**Timeline: Weeks 13-20**
+### Phase 5: Digital Implementation 💻
+**Timeline: Weeks 27-34**
 
-#### 4.1 Player Agent
+#### 5.1 Player Agent
 - [ ] Character sheet management system
 - [ ] Pool tracking and spending interface
 - [ ] Dice rolling with pool integration
@@ -76,7 +114,7 @@ Create a tabletop RPG that combines:
 - [ ] Skill and ability quick reference
 - [ ] Character advancement tools
 
-#### 4.2 GM Agent
+#### 5.2 GM Agent
 - [ ] Encounter management dashboard
 - [ ] NPC generator with stat blocks
 - [ ] Initiative and turn order tracker
@@ -84,23 +122,23 @@ Create a tabletop RPG that combines:
 - [ ] Session notes and campaign tracking
 - [ ] Random generators (names, treasures, complications)
 
-### Phase 5: Playtesting & Refinement 🎲
-**Timeline: Weeks 21-28**
+### Phase 6: Playtesting & Refinement 🎲
+**Timeline: Weeks 35-42**
 
-#### 5.1 Internal Testing
+#### 6.1 Internal Testing
 - [ ] Solo playtesting with different character builds
 - [ ] Combat balance testing across levels
 - [ ] Rules clarity and edge case documentation
 - [ ] Digital tool functionality testing
 
-#### 5.2 External Testing
+#### 6.2 External Testing
 - [ ] Recruit 2-3 playtest groups
 - [ ] Conduct structured playtest sessions
 - [ ] Gather detailed feedback on mechanics
 - [ ] Iterate on rules based on feedback
 - [ ] Refine digital tools based on usage
 
-#### 5.3 Final Polish
+#### 6.3 Final Polish
 - [ ] Complete rules editing and layout
 - [ ] Finalize digital tool interfaces
 - [ ] Create quick reference cards
@@ -117,11 +155,15 @@ Create a tabletop RPG that combines:
 │   ├── MEETING_NOTES.md
 │   └── CHANGELOG.md
 ├── /rules
-│   ├── core_mechanics.md
+│   ├── core_mechanics.md ✅ COMPLETED
+│   ├── critical_injuries.md ✅ COMPLETED  
+│   ├── combat.md ⭐ NEXT PRIORITY
+│   ├── skills_abilities.md ⭐ HIGH PRIORITY
 │   ├── character_creation.md
-│   ├── combat.md
-│   ├── skills_abilities.md
 │   ├── equipment.md
+│   ├── magic.md
+│   ├── exploration.md
+│   ├── social_interaction.md
 │   └── advancement.md
 ├── /world
 │   ├── setting_overview.md
@@ -167,7 +209,27 @@ Create a tabletop RPG that combines:
 4. **Narrative Integration**: Pool system supports dramatic moments and story beats
 5. **Digital Enhancement**: Tools enhance play without replacing human creativity
 
+## Current Status Warning ⚠️
+
+**CRITICAL GAPS IDENTIFIED**: The system is missing fundamental elements from both Year Zero Engine and D&D 5e:
+
+### Missing Year Zero Engine Elements:
+- **Skills & Specialties System** - No skill mechanics defined
+- **Combat System** - Only injuries exist, no actual combat rules
+- **Magic System** - Completely absent
+- **Travel/Exploration** - No mechanics for journeys or exploration
+
+### Missing D&D 5e Elements:
+- **Action Economy** - Combat actions not defined
+- **Initiative & Rounds** - Turn order system missing  
+- **Conditions** - Status effects not implemented
+- **Social Interaction** - No social encounter mechanics
+- **Equipment System** - No weapons, armor, or gear
+
+**IMMEDIATE ACTION REQUIRED**: Combat and Skills systems must be implemented before any playtesting can occur.
+
 ---
 
 *Last Updated: August 30, 2025*
 *Next Review: Weekly during active development*
+*Status: MAJOR REVISION - Extended timeline to address critical gaps*
