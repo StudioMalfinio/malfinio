@@ -15,7 +15,7 @@ Create a tabletop RPG that combines:
 #### 1.1 Combat & Core Mechanics (CRITICAL)
 - [x] Design pool system (Six D&D attributes) with flexible point spending
 - [x] Create critical injury system (Year Zero Engine inspired)
-- [ ] Create simplified tactical grid system (close/near/far zones vs feet/meters)
+- [x] Create simplified tactical grid system (square-based with diagonal rules)
 - [ ] Establish dice mechanics (d20 + pool spending for difficulty reduction)
 - [ ] Define action economy (action, move, bonus action simplified)
 - [ ] Design initiative system (DEX/Speed pool based)
@@ -157,6 +157,7 @@ Create a tabletop RPG that combines:
 ├── /rules
 │   ├── core_mechanics.md ✅ COMPLETED
 │   ├── critical_injuries.md ✅ COMPLETED  
+│   ├── zones_movement.md ✅ COMPLETED
 │   ├── combat.md ⭐ NEXT PRIORITY
 │   ├── skills_abilities.md ⭐ HIGH PRIORITY
 │   ├── character_creation.md

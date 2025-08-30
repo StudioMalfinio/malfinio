@@ -19,7 +19,7 @@
 #### 1.1 Combat & Core Mechanics (CRITICAL - Current Focus)
 - [x] **Design pool system (Six D&D attributes) with flexible point spending** ✅ *Completed*
 - [x] **Create critical injury system (Year Zero Engine inspired)** ✅ *Completed*
-- [ ] Create simplified tactical grid system (close/near/far zones vs feet/meters) ⭐ *URGENT*
+- [x] **Create simplified tactical grid system (square-based with diagonal rules)** ✅ *Completed*
 - [ ] Establish dice mechanics (d20 + pool spending for difficulty reduction) ⭐ *URGENT*
 - [ ] Define action economy (action, move, bonus action simplified) ⭐ *URGENT*
 - [ ] Design initiative system (DEX/Speed pool based) ⭐ *URGENT*
@@ -64,6 +64,7 @@
 - `docs/CHANGELOG.md` - Detailed change history
 - `rules/core_mechanics.md` - Six-pool system with flexible point spending ✅
 - `rules/critical_injuries.md` - Year Zero-style injury system ✅
+- `rules/zones_movement.md` - Grid-based tactical movement system ✅
 
 ## CRITICAL GAPS IDENTIFIED ⚠️
 
@@ -75,14 +76,14 @@
 5. **Magic System** - Completely absent
 
 ## Next Immediate Tasks (URGENT)
-1. **Create combat.md** - Initiative, actions, attack resolution
-2. **Create skills_abilities.md** - Skill list and mechanics  
-3. **Create character_creation.md** - Step-by-step character building
-4. **Create equipment.md** - Weapons and armor with pool damage
+1. **Establish dice mechanics (d20 + pool spending)** - Core resolution system
+2. **Define action economy** - Actions, movement, bonus actions
+3. **Create combat.md** - Initiative, attacks, defense
+4. **Create skills_abilities.md** - Skill list and mechanics
 
 ## Quick Reference
 - **Project Goal:** Hybrid TTRPG combining Cypher System pools with D&D 5e combat
-- **Key Innovation:** Zone-based tactical combat without distance measurement
+- **Key Innovation:** Grid-based tactical combat with simplified distance calculation
 - **Current Reality:** Many core systems missing - extended timeline required
 - **Success Metrics:** Complete ruleset, successful playtests, functional digital tools
 
