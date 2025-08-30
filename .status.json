@@ -18,15 +18,20 @@
     },
     {
       "task": "Create progress tracking system",
-      "files": ["PROGRESS.md", ".status.json"],
+      "files": ["PROGRESS.md", ".status.json", "docs/CHANGELOG.md"],
+      "date": "2025-08-30"
+    },
+    {
+      "task": "Design six-pool system with flexible point spending",
+      "files": ["rules/core_mechanics.md"],
       "date": "2025-08-30"
     }
   ],
-  "current_task": "Design pool system (Might/Speed/Intellect) with edge mechanics",
+  "current_task": "Create simplified tactical grid system (close/near/far zones)",
   "next_tasks": [
-    "Create simplified tactical grid system (close/near/far zones)",
     "Establish dice mechanics (d20 + pool spending)",
-    "Define action economy"
+    "Define simplified action economy",
+    "Design hybrid class system"
   ],
   "phase_status": {
     "setup": "completed",
@@ -37,7 +42,7 @@
     "phase_5": "not_started"
   },
   "directory_structure": {
-    "created": ["/.claude", "/"],
-    "pending": ["/docs", "/rules", "/world", "/agents", "/playtesting", "/assets"]
+    "created": ["/.claude", "/", "/docs", "/rules"],
+    "pending": ["/world", "/agents", "/playtesting", "/assets"]
   }
 }

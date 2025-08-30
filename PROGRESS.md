@@ -17,8 +17,8 @@
 ### 🔄 Phase 1: Core System Design (In Progress - Week 1)
 
 #### 1.1 Define Core Mechanics (Current Focus)
-- [ ] **Design pool system (Might/Speed/Intellect) with edge mechanics** ⭐ *Next Task*
-- [ ] Create simplified tactical grid system (close/near/far zones vs feet/meters)
+- [x] **Design pool system (Six D&D attributes) with flexible point spending** ✅ *Completed*
+- [ ] Create simplified tactical grid system (close/near/far zones vs feet/meters) ⭐ *Next Task*
 - [ ] Establish dice mechanics (d20 + pool spending for difficulty reduction)
 - [ ] Define action economy (action, move, bonus action simplified)
 
@@ -45,11 +45,14 @@
 - `.claude/settings.json` - Claude Code configuration
 - `.claude/claude-commit.sh` - Commit helper script
 - `PROGRESS.md` - This progress tracking file
+- `.status.json` - Machine-readable progress tracking
+- `docs/CHANGELOG.md` - Detailed change history
+- `rules/core_mechanics.md` - Six-pool system with flexible point spending
 
 ## Next Immediate Tasks
-1. Design the pool system (Might/Speed/Intellect) with edge mechanics
-2. Create project directory structure
-3. Set up rules documentation files
+1. Create simplified tactical grid system (close/near/far zones)
+2. Establish dice mechanics (d20 + pool spending)
+3. Define simplified action economy
 
 ## Quick Reference
 - **Project Goal:** Hybrid TTRPG combining Cypher System pools with D&D 5e combat
