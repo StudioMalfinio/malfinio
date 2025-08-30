@@ -1,14 +1,12 @@
 {
   "project_name": "Hybrid TTRPG",
-  "current_phase": "1.1",
-  "phase_name": "Combat & Core Mechanics (CRITICAL)",
+  "current_phase": "1.3",
+  "phase_name": "Character Framework (ACTIVE)",
   "phase_timeline": "Weeks 1-8 (Extended)",
   "last_updated": "2025-08-30",
   "week_number": 1,
-  "status": "MAJOR_GAPS_IDENTIFIED",
+  "status": "CORE_SYSTEMS_COMPLETE",
   "critical_missing_systems": [
-    "Combat System - No attack resolution, initiative, or actions",
-    "Skills System - No skill mechanics defined",
     "Equipment System - No weapons, armor, or gear",
     "Character Creation - Cannot make characters",
     "Magic System - Completely absent"
@@ -40,21 +38,40 @@
       "task": "Create critical injury system (Year Zero Engine style)",
       "files": ["rules/critical_injuries.md"],
       "date": "2025-08-30"
+    },
+    {
+      "task": "Create dice mechanics system (d20 + pool integration)",
+      "files": ["rules/dice_mechanics.md"],
+      "date": "2025-08-30"
+    },
+    {
+      "task": "Create action economy and initiative system",
+      "files": ["rules/action_economy.md"],
+      "date": "2025-08-30"
+    },
+    {
+      "task": "Create combat resolution system",
+      "files": ["rules/combat.md"],
+      "date": "2025-08-30"
+    },
+    {
+      "task": "Create comprehensive skills & abilities system",
+      "files": ["rules/skills_abilities.md"],
+      "date": "2025-08-30"
     }
   ],
-  "current_task": "Create combat system (combat.md) - URGENT",
+  "current_task": "Create equipment system (equipment.md) - HIGH PRIORITY",
   "next_tasks": [
-    "Create skills & abilities system (skills_abilities.md) - URGENT", 
     "Create character creation system (character_creation.md) - HIGH PRIORITY",
-    "Create equipment system (equipment.md) - HIGH PRIORITY",
-    "Create simplified tactical grid system (close/near/far zones)",
-    "Establish dice mechanics (d20 + pool spending)",
-    "Define action economy and initiative system"
+    "Create basic magic system (magic.md) - HIGH PRIORITY",
+    "Begin playtesting core systems",
+    "Create social interaction mechanics",
+    "Create travel and exploration systems"
   ],
   "phase_status": {
     "setup": "completed",
-    "phase_1_1": "critical_gaps_identified",
-    "phase_1_2": "not_started",
+    "phase_1_1": "completed",
+    "phase_1_2": "completed",
     "phase_1_3": "not_started", 
     "phase_1_4": "not_started",
     "phase_2": "not_started",
@@ -64,15 +81,10 @@
     "phase_6": "not_started"
   },
   "missing_year_zero_elements": [
-    "Skills & Specialties System",
-    "Combat System mechanics", 
     "Magic System",
     "Travel/Exploration System"
   ],
   "missing_dnd5e_elements": [
-    "Action Economy",
-    "Initiative & Rounds",
-    "Conditions System", 
     "Social Interaction Mechanics",
     "Equipment System"
   ],
@@ -80,11 +92,10 @@
     "created": ["/.claude", "/", "/docs", "/rules"],
     "pending": ["/world", "/agents", "/playtesting", "/assets"],
     "priority_files_needed": [
-      "rules/combat.md",
-      "rules/skills_abilities.md", 
+      "rules/equipment.md",
       "rules/character_creation.md",
-      "rules/equipment.md"
+      "rules/magic.md"
     ]
   },
-  "timeline_impact": "Extended from 4 weeks to 8 weeks for Phase 1 due to missing core systems"
+  "timeline_impact": "Back on track - core systems complete, proceeding to character framework"
 }

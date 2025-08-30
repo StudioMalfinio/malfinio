@@ -16,19 +16,19 @@ Create a tabletop RPG that combines:
 - [x] Design pool system (Six D&D attributes) with flexible point spending
 - [x] Create critical injury system (Year Zero Engine inspired)
 - [x] Create simplified tactical grid system (square-based with diagonal rules)
-- [ ] Establish dice mechanics (d20 + pool spending for difficulty reduction)
-- [ ] Define action economy (action, move, bonus action simplified)
-- [ ] Design initiative system (DEX/Speed pool based)
-- [ ] Create attack resolution mechanics
-- [ ] Define defense and armor rules
-- [ ] Establish conditions system (stunned, prone, grappled, etc.)
+- [x] Establish dice mechanics (d20 + pool spending for difficulty reduction)
+- [x] Define action economy (action, move, bonus action simplified)
+- [x] Design initiative system (DEX/Speed pool based)
+- [x] Create attack resolution mechanics
+- [x] Define defense and armor rules
+- [x] Establish conditions system (stunned, prone, grappled, etc.)
 
 #### 1.2 Skills & Abilities System (Year Zero Engine Core)
-- [ ] Create comprehensive skill list with pool associations
-- [ ] Define specialties/proficiency system (untrained/trained/expert)
-- [ ] Design skill challenge mechanics
-- [ ] Establish group skill check rules
-- [ ] Create opposed skill resolution
+- [x] Create comprehensive skill list with pool associations
+- [x] Define specialties/proficiency system (untrained/trained/expert)
+- [x] Design skill challenge mechanics
+- [x] Establish group skill check rules
+- [x] Create opposed skill resolution
 
 #### 1.3 Character Framework
 - [ ] Design hybrid class system (D&D archetypes + pool specialization)
@@ -158,8 +158,11 @@ Create a tabletop RPG that combines:
 │   ├── core_mechanics.md ✅ COMPLETED
 │   ├── critical_injuries.md ✅ COMPLETED  
 │   ├── zones_movement.md ✅ COMPLETED
-│   ├── combat.md ⭐ NEXT PRIORITY
-│   ├── skills_abilities.md ⭐ HIGH PRIORITY
+│   ├── dice_mechanics.md ✅ COMPLETED
+│   ├── action_economy.md ✅ COMPLETED
+│   ├── combat.md ✅ COMPLETED
+│   ├── skills_abilities.md ✅ COMPLETED
+│   ├── equipment.md ⭐ NEXT PRIORITY
 │   ├── character_creation.md
 │   ├── equipment.md
 │   ├── magic.md
@@ -212,25 +215,30 @@ Create a tabletop RPG that combines:
 
 ## Current Status Warning ⚠️
 
-**CRITICAL GAPS IDENTIFIED**: The system is missing fundamental elements from both Year Zero Engine and D&D 5e:
+**MAJOR PROGRESS ACHIEVED**: Core combat and skills systems are now complete!
 
-### Missing Year Zero Engine Elements:
-- **Skills & Specialties System** - No skill mechanics defined
-- **Combat System** - Only injuries exist, no actual combat rules
-- **Magic System** - Completely absent
-- **Travel/Exploration** - No mechanics for journeys or exploration
+### ✅ Completed Year Zero Engine Elements:
+- **Skills & Specialties System** - Comprehensive skill mechanics with pool integration
+- **Combat System** - Full tactical combat with grid movement
+- **Critical Injuries** - Year Zero-style injury system implemented
 
-### Missing D&D 5e Elements:
-- **Action Economy** - Combat actions not defined
-- **Initiative & Rounds** - Turn order system missing  
-- **Conditions** - Status effects not implemented
-- **Social Interaction** - No social encounter mechanics
-- **Equipment System** - No weapons, armor, or gear
+### ✅ Completed D&D 5e Elements:
+- **Action Economy** - Complete action/bonus/reaction system
+- **Initiative & Rounds** - DEX/WIS-based initiative with pool enhancement
+- **Conditions** - Full status effects system (prone, grappled, stunned, etc.)
+- **Combat Resolution** - Attack rolls, AC, damage, saves all functional
 
-**IMMEDIATE ACTION REQUIRED**: Combat and Skills systems must be implemented before any playtesting can occur.
+### 🔄 Remaining Core Systems:
+- **Equipment System** - Weapons, armor, and gear
+- **Character Creation** - Classes, backgrounds, creation process
+- **Magic System** - Spellcasting mechanics
+- **Social Interaction** - Enhanced social encounter mechanics
+- **Travel/Exploration** - Journey and exploration mechanics
+
+**READY FOR NEXT PHASE**: Equipment and character creation systems are now the priority.
 
 ---
 
 *Last Updated: August 30, 2025*
 *Next Review: Weekly during active development*
-*Status: MAJOR REVISION - Extended timeline to address critical gaps*
+*Status: MAJOR PROGRESS - Core systems complete, ready for character framework*
