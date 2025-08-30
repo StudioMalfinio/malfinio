@@ -5,7 +5,7 @@
 ## Core Resolution System
 
 ### Basic Roll
-- **Standard**: Always roll 1d20 + modifiers
+- **Standard**: Always roll 1d20 + proficiency + pool bonuses
 - **Pool Enhancement**: Spend pool points BEFORE rolling (1 point = +1 to roll)
 - **Effort Limit**: Maximum spend per roll limited by Effort Rating
   - Base Effort: 3 points (level 1)
@@ -17,7 +17,7 @@
 1. **Declare Intent**: State what you're attempting
 2. **GM Sets DC**: Difficulty determined
 3. **Spend Pool Points**: Choose amount (within Effort limit)
-4. **Roll Die**: 1d20 + modifiers + pool points
+4. **Roll Die**: 1d20 + proficiency + (pool max / 5) + Edge + pool points
 5. **Compare to DC**: Success if total meets or beats DC
 
 ## Difficulty Classes
@@ -56,7 +56,7 @@ Levels 17-20: +6
 ## Types of Rolls
 
 ### Skill Checks
-**Formula**: 1d20 + proficiency (if trained) + relevant pool points
+**Formula**: 1d20 + proficiency (if trained) + (pool max / 5) + Edge + pool points spent
 
 **Applications**:
 - STR: Athletics, climbing, jumping, breaking objects
@@ -71,7 +71,7 @@ Levels 17-20: +6
 - Some require training (e.g., arcane knowledge, complex medical procedures)
 
 ### Attack Rolls
-**Formula**: 1d20 + proficiency + relevant pool points
+**Formula**: 1d20 + proficiency + (pool max / 5) + Edge + pool points spent
 
 **Types**:
 - **Melee Attacks**: Use STR pool points
@@ -81,7 +81,7 @@ Levels 17-20: +6
 **Target**: Must meet or exceed target's Armor Class (AC)
 
 ### Saving Throws
-**Formula**: 1d20 + proficiency (if proficient) + relevant pool points
+**Formula**: 1d20 + proficiency (if proficient) + (pool max / 5) + Edge + pool points spent
 
 **Save Types**:
 - **STR**: Against being moved, grappled, or restrained
@@ -144,7 +144,7 @@ Levels 17-20: +6
 
 ### Basic Procedure
 1. Both parties declare pool point expenditure simultaneously
-2. Both roll 1d20 + modifiers + pool points
+2. Both roll 1d20 + proficiency + (pool max / 5) + Edge + pool points
 3. Highest total wins
 4. Ties go to defender or maintaining status quo
 
@@ -192,12 +192,12 @@ Levels 17-20: +6
 ## Special Mechanics
 
 ### Passive Checks
-**Formula**: 10 + all relevant modifiers (no roll)
+**Formula**: 10 + (pool max / 3) + proficiency (if trained) + Edge (no roll)
 
 **Applications**:
-- Passive Perception: 10 + WIS modifier + proficiency (if trained)
-- Passive Insight: 10 + WIS modifier + proficiency (if trained)  
-- Passive Investigation: 10 + INT modifier + proficiency (if trained)
+- Passive Perception: 10 + (WIS pool max / 3) + proficiency (if trained) + Edge
+- Passive Insight: 10 + (WIS pool max / 3) + proficiency (if trained) + Edge
+- Passive Investigation: 10 + (INT pool max / 3) + proficiency (if trained) + Edge
 
 **Limitations**:
 - Cannot spend pool points on passive checks
