@@ -67,12 +67,104 @@ This system defines how combat encounters are resolved, from initiative through 
 - **Maximum HP**: Increases each level as normal
 
 ### Damage Types and Resistance
-- **Physical**: Slashing, piercing, bludgeoning
-- **Elemental**: Fire, cold, lightning, thunder, acid
-- **Energy**: Force, radiant, necrotic, psychic
-- **Resistance**: Take half damage from specific types
+
+#### Physical Damage Types
+**Slashing**
+- **Sources**: Swords, axes, claws, broken glass
+- **Environmental**: Razor wire, whirling blades, sharp debris
+- **Typical Resistances**: Skeletons, incorporeal creatures
+- **Typical Vulnerabilities**: Plant creatures, certain constructs
+
+**Piercing** 
+- **Sources**: Spears, arrows, fangs, needles
+- **Environmental**: Spikes, thorns, falling icicles
+- **Typical Resistances**: Oozes, heavily armored creatures
+- **Typical Vulnerabilities**: Balloons, gas-filled creatures
+
+**Bludgeoning**
+- **Sources**: Hammers, clubs, fists, falling rocks
+- **Environmental**: Cave-ins, crushing walls, heavy objects
+- **Typical Resistances**: Oozes, gas creatures, skeletons
+- **Typical Vulnerabilities**: Brittle creatures, crystalline beings
+
+#### Elemental Damage Types
+**Fire**
+- **Sources**: Flames, molten metal, dragon breath, spells
+- **Environmental**: Lava, wildfires, hot surfaces, steam
+- **Typical Resistances**: Fire elementals, red dragons, devils
+- **Typical Vulnerabilities**: Ice creatures, plants, undead
+- **Associated Conditions**: Ignited (ongoing fire damage)
+
+**Cold**
+- **Sources**: Ice spells, frost breath, freezing wind
+- **Environmental**: Blizzards, icy water, frozen surfaces
+- **Typical Resistances**: Ice elementals, white dragons, winter fey
+- **Typical Vulnerabilities**: Fire creatures, tropical beings
+- **Associated Conditions**: Slowed, hypothermia
+
+**Lightning**
+- **Sources**: Lightning spells, electric breath, storm magic
+- **Environmental**: Thunderstorms, static discharge, power sources
+- **Typical Resistances**: Air elementals, storm creatures
+- **Typical Vulnerabilities**: Creatures in metal armor, water creatures
+- **Associated Conditions**: Stunned, paralyzed
+
+**Thunder**
+- **Sources**: Sonic spells, thunder breath, explosive sounds
+- **Environmental**: Avalanches, sonic booms, collapsing structures  
+- **Typical Resistances**: Deaf creatures, earth elementals
+- **Typical Vulnerabilities**: Creatures with sensitive hearing
+- **Associated Conditions**: Deafened, prone (knockdown)
+
+**Acid**
+- **Sources**: Acid breath, corrosive spells, chemical attacks
+- **Environmental**: Acid pools, corrosive rain, acidic creatures
+- **Typical Resistances**: Oozes, certain dragons, constructs
+- **Typical Vulnerabilities**: Metal creatures, organic matter
+- **Associated Conditions**: Equipment degradation, ongoing acid damage
+
+#### Energy Damage Types
+**Force**
+- **Sources**: Magic missile, force spells, pure magical energy
+- **Environmental**: Magical explosions, unstable magic zones
+- **Typical Resistances**: Very rare - force is nearly universal
+- **Typical Vulnerabilities**: None commonly known
+- **Special**: Affects incorporeal creatures normally
+
+**Radiant**
+- **Sources**: Divine spells, holy weapons, celestial beings
+- **Environmental**: Holy sites, divine manifestations, sunlight
+- **Typical Resistances**: Celestials, some good-aligned creatures
+- **Typical Vulnerabilities**: Undead, fiends, shadow creatures
+- **Associated Conditions**: Blinded, banishment effects
+
+**Necrotic**
+- **Sources**: Death spells, undead touch, negative energy
+- **Environmental**: Cursed areas, death magic, necromantic sites
+- **Typical Resistances**: Undead, some fiends, necromancers
+- **Typical Vulnerabilities**: Living creatures, celestials
+- **Associated Conditions**: Life drain, weakened, cursed
+
+**Psychic**
+- **Sources**: Mind spells, psychic attacks, mental assaults
+- **Environmental**: Psychic storms, mind-warping areas
+- **Typical Resistances**: Mindless creatures, some aberrations
+- **Typical Vulnerabilities**: Intelligent creatures, psychically sensitive
+- **Associated Conditions**: Confused, charmed, frightened
+
+### Damage Resistance Mechanics
+- **Resistance**: Take half damage from specific types (round down)
 - **Vulnerability**: Take double damage from specific types
 - **Immunity**: Take no damage from specific types
+- **Multiple Resistances**: Apply each separately (resistance to fire and cold = half from each)
+
+### Environmental Damage Examples
+- **Lava**: 2d6 fire damage per round of contact
+- **Extreme Cold**: 1d4 cold damage per minute of exposure
+- **Lightning Storm**: 3d6 lightning damage (DEX save for half)
+- **Acid Pool**: 1d6 acid damage per round, +1d6 per round exposed
+- **Falling**: 1d6 bludgeoning per 10 feet fallen
+- **Suffocation**: CON saves or begin dying process
 
 ### Pool Damage Integration
 When you take damage that reduces you to 0 HP:
