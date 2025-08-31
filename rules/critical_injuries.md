@@ -1,214 +1,198 @@
-# Critical Injury Tables
+# Injury System
 
-*Year Zero Engine-inspired injury system for the six-pool hybrid TTRPG*
+*SP-based injury accumulation system with class-specific fragility multipliers*
 
-## How Critical Injuries Work
+## How the Injury System Works
 
-### When You Suffer Critical Injuries
-- **Pool reduced to 0 by attack**: Roll based on damage taken
-- **Major damage**: Losing 3+ points from single attack  
-- **Pushing while broken**: Voluntary choice for emergency points
+### When Injuries Begin
+**Injuries only occur when SP reaches 0:**
+- Taking damage to AP does not cause injuries
+- Only damage that affects SP while at 0 SP triggers the injury system
+- This ensures injuries represent real bodily harm, not equipment damage or fatigue
 
-### Injury Severity
-- **1-2 points lost/gained**: Roll 1d20 (entries 1-20)
-- **3-4 points lost/gained**: Roll 1d40 (entries 1-40)
-- **5+ points lost/gained**: Roll 1d60 (entries 1-60)
+### Injury Accumulation Process
 
-### Critical Injury Properties
-Each injury has:
-- **Effect**: Mechanical penalty during healing
-- **Healing Time**: Number of d6 to roll for healing time units
-- **Special**: Additional rules (lethal, permanent, etc.)
+#### Step 1: Take Damage While at 0 SP
+When you're at 0 SP and take further damage:
+1. Apply damage normally (after AP/SP choices)
+2. Any damage that affects SP gets accumulated
 
-### Healing Time System
-- **Roll the specified d6**: Each die shows time units to heal
-- **Time Units**: Hours (minor), days (moderate), or weeks (major) based on campaign pace
-- **Medical Care**: Medicine check (DC 15) allows rerolling 1s
-- **Magical Healing**: Reduces healing dice by half or heals instantly
+#### Step 2: Apply Class Multiplier
+Multiply the SP damage by your class fragility modifier:
 
----
+**Class Fragility Multipliers:**
+- **Wizard/Bard**: ×2.0 (very fragile when hurt)
+- **Rogue/Warlock**: ×1.5 (somewhat fragile)  
+- **Cleric/Ranger**: ×1.2 (slightly fragile)
+- **Fighter**: ×1.0 (baseline toughness)
+- **Barbarian**: ×0.5 (extremely resilient)
 
-## Physical Critical Injuries
-*For STR, DEX, and CON pool damage*
+#### Step 3: Add to Accumulation Total
+Keep a running total of accumulated injury damage for the character.
 
-### Minor Physical Injuries (1-20)
-| d20 | Injury | Effect | Healing |
-|-----|--------|--------|---------|
-| 1 | **Bruised Ribs** | -1 to CON rolls | 1d6 hours |
-| 2 | **Scraped Knuckles** | -1 to STR rolls | 1d6 hours |
-| 3 | **Twisted Ankle** | -5 ft movement | 1d6 hours |
-| 4 | **Strained Wrist** | -1 to DEX rolls | 1d6 hours |
-| 5 | **Bruised Muscle** | -1 to STR rolls | 1d6 hours |
-| 6 | **Minor Cut** | -1 to CHA rolls (scarring) | 1d6 hours |
-| 7 | **Sore Back** | -1 to CON rolls | 1d6 hours |
-| 8 | **Jammed Finger** | -1 to DEX rolls | 1d6 hours |
-| 9 | **Shin Bruise** | -5 ft movement | 1d6 hours |
-| 10 | **Neck Strain** | -1 to WIS rolls (perception) | 1d6 hours |
-| 11 | **Shoulder Ache** | -1 to STR rolls | 1d6 hours |
-| 12 | **Skinned Knee** | -1 to DEX rolls | 1d6 hours |
-| 13 | **Headache** | -1 to INT rolls | 1d6 hours |
-| 14 | **Nosebleed** | -1 to CHA rolls | 1d6 hours |
-| 15 | **Muscle Cramp** | -1 to CON rolls | 1d6 hours |
-| 16 | **Scratched Face** | -1 to CHA rolls | 1d6 hours |
-| 17 | **Sore Joints** | -1 to DEX rolls | 1d6 hours |
-| 18 | **Winded** | -1 to CON rolls | 1d6 hours |
-| 19 | **Stiff Muscles** | -1 to STR rolls | 1d6 hours |
-| 20 | **Light Sprain** | -1 to DEX rolls, -5 ft movement | 2d6 hours |
+#### Step 4: Check Injury Thresholds
+Compare total accumulated damage to thresholds:
+- **20+ points**: Minor Injury
+- **40+ points**: Moderate Injury  
+- **60+ points**: Major Injury
+- **80+ points**: Critical Injury/Death
 
-### Moderate Physical Injuries (21-40)
-| d40 | Injury | Effect | Healing |
-|-----|--------|--------|---------|
-| 21 | **Pulled Muscle** | -2 to STR rolls | 1d6 days |
-| 22 | **Sprained Ankle** | -2 to DEX rolls, half speed | 2d6 days |
-| 23 | **Cracked Rib** | -2 to CON rolls | 2d6 days |
-| 24 | **Deep Cut** | -2 to CHA rolls, bleeding (1 damage/day if untreated) | 2d6 days |
-| 25 | **Torn Ligament** | -3 to DEX rolls | 2d6 days |
-| 26 | **Severe Bruising** | -2 to STR rolls | 1d6 days |
-| 27 | **Concussion** | -2 to INT and WIS rolls | 2d6 days |
-| 28 | **Dislocated Finger** | -2 to DEX rolls | 1d6 days |
-| 29 | **Damaged Muscle** | -2 to STR rolls | 2d6 days |
-| 30 | **Severe Sprain** | -3 to DEX rolls, cannot run | 2d6 days |
-| 31 | **Internal Bruising** | -2 to CON rolls | 1d6 days |
-| 32 | **Torn Cartilage** | -2 to DEX rolls, permanent -1 if not treated | 3d6 days |
-| 33 | **Facial Injury** | -3 to CHA rolls | 2d6 days |
-| 34 | **Back Injury** | -2 to STR and CON rolls | 2d6 days |
-| 35 | **Knee Injury** | -2 to DEX rolls, speed halved | 3d6 days |
-| 36 | **Shoulder Strain** | -3 to STR rolls with one arm | 2d6 days |
-| 37 | **Nerve Damage** | -2 to DEX rolls, numbness in extremity | 3d6 days |
-| 38 | **Severe Headache** | -2 to all mental rolls | 1d6 days |
-| 39 | **Joint Damage** | -2 to STR and DEX rolls | 2d6 days |
-| 40 | **Muscle Tear** | -3 to STR rolls, painful movement | 3d6 days |
+### Injury Examples
 
-### Major Physical Injuries (41-60)
-| d60 | Injury | Effect | Healing |
-|-----|--------|--------|---------|
-| 41 | **Broken Finger** | -2 to DEX rolls, cannot use hand properly | 3d6 days |
-| 42 | **Dislocated Shoulder** | Cannot use arm, -4 to STR rolls | 2d6 days |
-| 43 | **Broken Rib** | -3 to CON rolls, painful breathing | 4d6 days |
-| 44 | **Severe Concussion** | -3 to INT/WIS rolls, unconscious 1d6 rounds | 3d6 days |
-| 45 | **Compound Fracture** | -4 to related rolls, lethal if untreated | 6d6 days |
-| 46 | **Internal Bleeding** | Lethal: 1 CON damage per hour until treated | See special |
-| 47 | **Crushed Hand** | Cannot use hand, -5 to DEX rolls | 8d6 days |
-| 48 | **Spinal Injury** | -3 to STR/DEX rolls, paralysis risk | 12d6 days |
-| 49 | **Torn Tendon** | Cannot move joint properly, -4 to related rolls | 6d6 days |
-| 50 | **Shattered Bone** | -5 to related rolls, permanent -1 without magical healing | 8d6 days |
-| 51 | **Organ Damage** | -4 to CON rolls, lethal complications possible | 6d6 days |
-| 52 | **Severe Burns** | -3 to STR/DEX/CHA rolls, infection risk | 8d6 days |
-| 53 | **Broken Spine** | Paralyzed below injury, permanent without magic | Permanent |
-| 54 | **Crushed Limb** | Limb unusable, amputation may be necessary | 12d6 days |
-| 55 | **Punctured Lung** | Lethal: CON saves every round or die | See special |
-| 56 | **Traumatic Brain Injury** | -4 to all mental rolls, personality changes | 12d6 days |
-| 57 | **Severed Artery** | Lethal: Death in 1d6 rounds without immediate aid | See special |
-| 58 | **Multiple Fractures** | -4 to STR/DEX rolls, bedridden | 12d6 days |
-| 59 | **Catastrophic Injury** | Two moderate injuries, roll twice on 21-40 | See individual |
-| 60 | **Near Death** | Unconscious, death saves every round for 1d6 rounds | See special |
+#### Example 1: Fragile Wizard
+**Lyara the Wizard** (×2.0 multiplier, currently at 0 SP):
+- Takes 4 damage: 4 × 2.0 = 8 accumulated (no injury yet)
+- Takes 7 damage: 8 + (7 × 2.0) = 22 accumulated → **Minor Injury**
+- Takes 5 damage: 22 + (5 × 2.0) = 32 accumulated (still minor)
+- Takes 8 damage: 32 + (8 × 2.0) = 48 accumulated → **Moderate Injury**
 
----
+#### Example 2: Tough Barbarian  
+**Grok the Barbarian** (×0.5 multiplier, currently at 0 SP):
+- Takes 10 damage: 10 × 0.5 = 5 accumulated (no injury)
+- Takes 15 damage: 5 + (15 × 0.5) = 12.5 accumulated (no injury)
+- Takes 20 damage: 12.5 + (20 × 0.5) = 22.5 accumulated → **Minor Injury**
+- Would need 40+ raw damage to reach Moderate Injury!
 
-## Mental Critical Injuries  
-*For INT, WIS, and CHA pool damage*
+## Injury Severity and Effects
 
-### Minor Mental Injuries (1-20)
-| d20 | Injury | Effect | Healing |
-|-----|--------|--------|---------|
-| 1 | **Mild Headache** | -1 to INT rolls | 1d6 hours |
-| 2 | **Momentary Confusion** | -1 to WIS rolls | 1d6 hours |
-| 3 | **Social Anxiety** | -1 to CHA rolls | 1d6 hours |
-| 4 | **Difficulty Concentrating** | -1 to INT rolls | 1d6 hours |
-| 5 | **Nervous Tremor** | -1 to DEX rolls | 1d6 hours |
-| 6 | **Memory Lapse** | -1 to INT rolls | 1d6 hours |
-| 7 | **Emotional Numbness** | -1 to CHA rolls | 1d6 hours |
-| 8 | **Sensory Overload** | -1 to WIS rolls | 1d6 hours |
-| 9 | **Stuttering** | -1 to CHA rolls | 1d6 hours |
-| 10 | **Paranoia** | -1 to WIS rolls | 1d6 hours |
-| 11 | **Depression** | -1 to CHA rolls | 2d6 hours |
-| 12 | **Anxiety** | -1 to all rolls in social situations | 1d6 hours |
-| 13 | **Fatigue** | -1 to all mental rolls | 1d6 hours |
-| 14 | **Irritability** | -1 to CHA rolls | 1d6 hours |
-| 15 | **Distraction** | -1 to WIS rolls | 1d6 hours |
-| 16 | **Self-Doubt** | -1 to CHA rolls | 1d6 hours |
-| 17 | **Racing Thoughts** | -1 to INT rolls | 1d6 hours |
-| 18 | **Emotional Outbursts** | -1 to CHA rolls | 1d6 hours |
-| 19 | **Forgetfulness** | -1 to INT rolls | 1d6 hours |
-| 20 | **Mild Panic** | -1 to WIS rolls | 1d6 hours |
+### Minor Injuries (20-39 Accumulated)
+**Temporary inconveniences that clear with rest**
 
-### Moderate Mental Injuries (21-40)
-| d40 | Injury | Effect | Healing |
-|-----|--------|--------|---------|
-| 21 | **Severe Depression** | -2 to CHA rolls, disadvantage on initiative | 1d6 days |
-| 22 | **Panic Disorder** | -2 to WIS rolls, must save vs fear effects | 2d6 days |
-| 23 | **Memory Loss** | Lose memories of last 1d6 days | 3d6 days |
-| 24 | **Social Phobia** | -3 to CHA rolls, avoid social situations | 2d6 days |
-| 25 | **Concentration Loss** | Cannot maintain concentration, -2 to INT rolls | 1d6 days |
-| 26 | **Paranoid Delusions** | -2 to WIS rolls, distrust allies | 2d6 days |
-| 27 | **Emotional Breakdown** | Cannot take social actions for 1d6 days | 2d6 days |
-| 28 | **Severe Anxiety** | -2 to all rolls in stressful situations | 1d6 days |
-| 29 | **Identity Crisis** | -2 to CHA rolls, unsure of self | 2d6 days |
-| 30 | **Cognitive Impairment** | -2 to INT rolls, slow thinking | 3d6 days |
-| 31 | **Hallucinations** | -2 to WIS rolls, see things that aren't there | 2d6 days |
-| 32 | **Manic Episode** | Must act recklessly, cannot plan carefully | 1d6 days |
-| 33 | **Selective Mutism** | Cannot speak for 1d6 days | 2d6 days |
-| 34 | **Severe Phobia** | Fear of specific trigger, -3 to related rolls | 3d6 days |
-| 35 | **Dissociation** | -2 to all rolls, feel disconnected | 2d6 days |
-| 36 | **Obsessive Thoughts** | -2 to INT/WIS rolls, fixated on one idea | 3d6 days |
-| 37 | **Emotional Numbness** | -3 to CHA rolls, cannot feel empathy | 2d6 days |
-| 38 | **Sleep Disorders** | -1 to all rolls, cannot benefit from rest | 3d6 days |
-| 39 | **Severe Confusion** | -3 to INT rolls, easily lost or disoriented | 2d6 days |
-| 40 | **Trauma Response** | Triggered by specific stimuli, -3 to related rolls | 4d6 days |
+Roll 1d20 on Minor Injury Table:
+- **Duration**: Clear after short rest
+- **Effects**: Minor penalties (-1 to relevant checks)
+- **Treatment**: Can be ignored or treated with Medicine check
 
-### Major Mental Injuries (41-60)
-| d60 | Injury | Effect | Healing |
-|-----|--------|--------|---------|
-| 41 | **Complete Memory Loss** | Forget identity and skills, -4 to all rolls | 6d6 days |
-| 42 | **Catatonic State** | Cannot act for 2d6 days | 4d6 days |
-| 43 | **Psychotic Break** | Hallucinations, delusions, -4 to WIS rolls | 8d6 days |
-| 44 | **Severe PTSD** | Triggered by combat, -3 to all rolls in fights | 12d6 days |
-| 45 | **Multiple Personalities** | GM controls character 50% of time | 12d6 days |
-| 46 | **Complete Breakdown** | Cannot function, requires constant care | 8d6 days |
-| 47 | **Permanent Amnesia** | Lose all memories, permanent without magic | Permanent |
-| 48 | **Vegetative State** | Unconscious, requires life support | 12d6 days |
-| 49 | **Severe Brain Damage** | -4 to all mental rolls, permanent -2 without magic | Permanent |
-| 50 | **Complete Mutism** | Cannot speak, permanent without magic | Permanent |
-| 51 | **Crippling Phobia** | Cannot function near trigger, permanent fear | Permanent |
-| 52 | **Personality Death** | Become different person, lose all connections | Permanent |
-| 53 | **Persistent Psychosis** | Constant hallucinations, cannot distinguish reality | Permanent |
-| 54 | **Total Dissociation** | No sense of self, cannot make decisions | 12d6 days |
-| 55 | **Mental Regression** | Revert to child-like state | 8d6 days |
-| 56 | **Emotional Death** | Cannot feel any emotions, -5 to CHA rolls | Permanent |
-| 57 | **Complete Madness** | Random actions, GM controls character | 12d6 days |
-| 58 | **Brain Death** | Consciousness destroyed, body lives | Permanent |
-| 59 | **Catastrophic Trauma** | Two moderate injuries, roll twice on 21-40 | See individual |
-| 60 | **Shattered Mind** | Three mental conditions, roll three times on 21-40 | See individual |
+**Sample Minor Injuries:**
+1. **Bruised** - -1 to next physical check
+2. **Dazed** - Lose reaction until end of turn  
+3. **Winded** - -5 movement for 1 minute
+4. **Scraped** - -1 to Charisma checks until healed
+5. **Stiff** - -1 to Dexterity checks until healed
 
----
+### Moderate Injuries (40-59 Accumulated)
+**Significant wounds requiring proper treatment**
 
-## Special Rules
+Roll 1d20 on Moderate Injury Table:
+- **Duration**: Clear after long rest OR medical treatment (Medicine DC 15)
+- **Effects**: Moderate penalties (-2 to relevant checks, limited actions)
+- **Treatment**: Medicine check can provide immediate relief
 
-### Lethal Injuries
-Some injuries are marked as **lethal** and require immediate medical attention:
-- Make death saves at specified intervals
-- DC starts at 10, increases by 2 each save
-- Success: Stabilized until next interval
-- Failure: Death
-- **Stabilization**: Medicine check (DC 15) removes lethal status
+**Sample Moderate Injuries:**
+1. **Bleeding** - Lose 1 SP per round until treated
+2. **Sprained Limb** - Disadvantage on STR or DEX checks
+3. **Concussion** - Disadvantage on INT checks  
+4. **Cracked Rib** - -2 to attack rolls
+5. **Severe Bruising** - Movement speed reduced by 10 feet
 
-### Permanent Injuries
-Injuries marked **permanent** never heal naturally:
-- Require magical healing to remove
-- May leave lasting consequences even after healing
-- Can define character's story and growth
+### Major Injuries (60-79 Accumulated)
+**Serious trauma with lasting consequences**
 
-### Multiple Injuries
-- You can have multiple different injuries simultaneously
-- Effects are cumulative (penalties stack)
-- Each heals on its own timeline
-- **Same Injury**: Reroll if you get the exact same injury twice
+Roll 1d20 on Major Injury Table:
+- **Duration**: Days or weeks to heal naturally
+- **Effects**: Severe penalties (-3 to relevant checks, significant limitations)
+- **Treatment**: Requires extended medical care or magical healing
 
-### Healing Acceleration
-- **Medical Care**: Daily Medicine check (DC 15) doubles healing for that day
-- **Magical Healing**: Lesser restoration removes minor injuries, greater restoration removes moderate, heal removes major
-- **Rest**: Natural healing continues during adventuring
+**Sample Major Injuries:**
+1. **Broken Bone** - One limb unusable for weeks
+2. **Internal Bleeding** - Death saves at disadvantage
+3. **Severed Tendon** - Permanent -2 to related checks until magical healing
+4. **Organ Damage** - Constitution score reduced by 1
+5. **Traumatic Brain Injury** - Random mental effects
+
+### Critical Injuries (80+ Accumulated)  
+**Life-threatening trauma**
+
+Roll 1d20 on Critical Injury Table:
+- **Duration**: Permanent without magical intervention
+- **Effects**: Severe disabilities, ability score loss, death risk
+- **Treatment**: Requires powerful magic or specialized care
+
+**Sample Critical Injuries:**
+1. **System Shock** - Unconscious for 1d6 hours, permanent Constitution loss
+2. **Maiming** - Lose eye/limb/finger permanently
+3. **Organ Failure** - Requires immediate magical healing or die in 1d6 rounds
+4. **Spinal Damage** - Paralysis below injury point
+5. **Cardiac Arrest** - Die immediately unless revived within 1 round
+
+## Injury Recovery
+
+### Accumulation Reset
+**Injury accumulation resets to 0 when you:**
+- Complete a short rest (regain some SP)
+- Complete a long rest (regain all SP)
+- Receive magical healing that restores SP above 0
+
+### Injury Duration
+**Individual injuries have their own healing times:**
+- **Minor**: Clear after short rest
+- **Moderate**: Clear after long rest OR Medicine DC 15
+- **Major**: Require days/weeks OR magical healing
+- **Critical**: Permanent without powerful magic
+
+### Medical Treatment
+**Medicine Skill Applications:**
+- **DC 10**: Stabilize dying character
+- **DC 15**: Remove one moderate injury
+- **DC 20**: Reduce major injury healing time by half
+- **DC 25**: Prevent critical injury from becoming permanent
+
+### Magical Healing
+**Spell Effects on Injuries:**
+- **Healing Word/Cure Wounds**: Remove minor injuries when bringing above 0 SP
+- **Lesser Restoration**: Remove one moderate injury
+- **Greater Restoration**: Remove one major injury  
+- **Heal/Regenerate**: Remove all injuries including critical ones
+
+## Skills That Interact With Injuries
+
+### Injury Resistance Skills
+**Pain Tolerance** (4 CON + 2 WIS)
+- Passive: First injury each combat is one category less severe
+- Active: Ignore all injury penalties for 3 rounds
+
+**Iron Constitution** (6 CON)
+- Passive: Injury multiplier improved by 0.25 (Wizard becomes ×1.75)
+- Active: Next injury accumulation is halved
+
+**Berserker's Rage** (5 CON + 3 STR)
+- Active: Ignore all current injuries while raging, but take double accumulation
+
+### Injury-Causing Skills  
+**Crippling Strike** (4 DEX + 2 INT)
+- Active: Your next attack forces injury check regardless of target's SP
+
+**Brutal Assault** (5 STR + 1 CON)
+- Active: Target treats injury accumulation as one category worse for this attack
+
+### Healing Skills
+**Combat Medic** (3 INT + 3 WIS)
+- Passive: Medicine checks get +2 bonus
+- Active: Remove one minor or moderate injury from ally (once per long rest)
+
+**Field Surgery** (4 INT + 4 WIS)
+- Active: Attempt to treat major injury in 10 minutes instead of days
+
+## Tactical Considerations
+
+### Resource Management at 0 SP
+When at 0 SP, every point of damage matters:
+- **Preserve AP**: This resource can still prevent SP damage
+- **Class Awareness**: Know your fragility multiplier
+- **Healing Priority**: Get above 0 SP quickly to stop accumulation
+
+### Party Dynamics
+- **Protect the Fragile**: Wizards accumulate injuries twice as fast
+- **Leverage the Tough**: Barbarians can absorb more punishment
+- **Medical Support**: Someone with healing skills becomes crucial
+- **Emergency Resources**: Save healing for injury prevention, not just SP recovery
+
+### Combat Strategy
+- **Death Spiral Awareness**: Each injury makes you weaker
+- **Retreat Timing**: Know when to disengage before injuries mount
+- **Healing Windows**: Use battlefield healing to reset accumulation
+- **Injury Trading**: Sometimes better to take injuries than let allies fall
 
 ---
 
-*This injury system adds narrative weight and lasting consequences to combat and risky situations, encouraging players to think tactically about resource management.*
+*This injury system creates realistic consequences for sustained damage while maintaining class identity through differential fragility, making every point of damage at 0 SP matter significantly.*
