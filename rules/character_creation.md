@@ -13,84 +13,64 @@ This system guides players through creating characters that combine D&D archetyp
 Select from eight core classes, each with distinct pool priorities and abilities:
 
 #### Fighter - The Tactical Warrior
-- **Primary Pool**: Strength (18) - Melee combat mastery
-- **Secondary Pool**: Constitution (15) - Battlefield endurance
-- **Tertiary Pools**: Dexterity (12), Wisdom (12) - Tactics and awareness
-- **Quaternary Pools**: Intelligence (10), Charisma (10)
+- **Pool Distribution**: STR (16), CON (14), DEX (12), WIS (10), INT (8), CHA (9)
 - **Core Role**: Frontline combatant, tactical leader, weapons master
-- **Starting HP**: 12 + (CON pool max / 3) = 12 + 5 = 17 HP
-- **Starting Edge**: +1 STR Edge
-- **Effort Rating**: 5 STR (3 base + 2 primary), 3 others
+- **SP Contribution**: High (STR + CON + DEX all moderate to high)
+- **Starting Skills**: 3 combat-focused skills (Weapon Master, Combat Reflexes, etc.)
+- **Defense Pools**: High SP, moderate AP from armor
 
 #### Rogue - The Cunning Specialist  
-- **Primary Pool**: Dexterity (18) - Precision and stealth
-- **Secondary Pool**: Intelligence (15) - Planning and investigation
-- **Tertiary Pools**: Wisdom (12), Charisma (12) - Perception and social skills
-- **Quaternary Pools**: Strength (10), Constitution (10)
+- **Pool Distribution**: DEX (16), INT (12), WIS (12), CHA (12), STR (9), CON (8)
 - **Core Role**: Scout, infiltrator, skill specialist, precise striker
-- **Starting HP**: 10 + (CON pool max / 3) = 10 + 3 = 13 HP
-- **Starting Edge**: +1 DEX Edge
-- **Effort Rating**: 5 DEX (3 base + 2 primary), 3 others
+- **SP Contribution**: High (strong DEX, moderate other stats)
+- **Starting Skills**: 3 stealth/precision skills (Stealth Master, Precise Strike, etc.)
+- **Defense Pools**: High SP from DEX, low AP
 
 #### Ranger - The Wilderness Guardian
-- **Primary Pool**: Dexterity (18) - Ranged combat and mobility
-- **Secondary Pool**: Wisdom (15) - Survival and tracking
-- **Tertiary Pools**: Strength (12), Constitution (12) - Physical capability
-- **Quaternary Pools**: Intelligence (10), Charisma (10)
+- **Pool Distribution**: DEX (16), WIS (14), CON (12), STR (10), INT (9), CHA (8)
 - **Core Role**: Ranged combatant, tracker, nature specialist
-- **Starting HP**: 11 + (CON pool max / 3) = 11 + 4 = 15 HP
-- **Starting Edge**: +1 DEX Edge
-- **Effort Rating**: 5 DEX (3 base + 2 primary), 3 others
+- **SP Contribution**: High (strong DEX and CON, moderate STR)
+- **Starting Skills**: 3 wilderness/ranged skills (Archer's Eye, Tracker, Nature's Voice)
+- **Defense Pools**: High SP, moderate AP
 
 #### Barbarian - The Primal Warrior
-- **Primary Pool**: Constitution (18) - Raw endurance and resilience
-- **Secondary Pool**: Strength (15) - Savage combat power
-- **Tertiary Pools**: Dexterity (12), Wisdom (12) - Instincts and mobility
-- **Quaternary Pools**: Intelligence (10), Charisma (10)
+- **Pool Distribution**: CON (16), STR (14), WIS (12), DEX (10), INT (8), CHA (9)
 - **Core Role**: Damage absorber, berserker, primal force
-- **Starting HP**: 14 + (CON pool max / 3) = 14 + 6 = 20 HP
-- **Starting Edge**: +1 CON Edge
-- **Effort Rating**: 5 CON (3 base + 2 primary), 3 others
+- **SP Contribution**: Very High (strong STR and CON, moderate DEX)
+- **Starting Skills**: 3 endurance/rage skills (Thick Skin, Berserker's Fury, etc.)
+- **Defense Pools**: Very high SP, natural AP from skills
 
 #### Wizard - The Arcane Scholar
-- **Primary Pool**: Intelligence (18) - Magical knowledge and power
-- **Secondary Pool**: Wisdom (15) - Magical perception and wisdom
-- **Tertiary Pools**: Dexterity (12), Constitution (12) - Survival and mobility
-- **Quaternary Pools**: Strength (10), Charisma (10)
+- **Pool Distribution**: INT (18), WIS (14), DEX (12), CON (10), STR (8), CHA (9)
 - **Core Role**: Arcane spellcaster, magical researcher, battlefield controller
-- **Starting HP**: 8 + (CON pool max / 3) = 8 + 4 = 12 HP
-- **Starting Edge**: +1 INT Edge
-- **Effort Rating**: 5 INT (3 base + 2 primary), 3 others
+- **SP Contribution**: Low (weak physical stats)
+- **Starting Skills**: 3 magic skills (Spell Matrix, Arcane Shield, Quick Thinking)
+- **Defense Pools**: Low SP, no natural AP
+- **Special**: ×2.0 injury multiplier (very fragile)
 
 #### Cleric - The Divine Channel
-- **Primary Pool**: Wisdom (18) - Divine connection and insight
-- **Secondary Pool**: Constitution (15) - Spiritual endurance
-- **Tertiary Pools**: Strength (12), Charisma (12) - Physical and social presence
-- **Quaternary Pools**: Dexterity (10), Intelligence (10)
+- **Pool Distribution**: WIS (18), CHA (14), CON (12), STR (10), DEX (9), INT (8)
 - **Core Role**: Divine spellcaster, healer, spiritual guide
-- **Starting HP**: 10 + (CON pool max / 3) = 10 + 5 = 15 HP
-- **Starting Edge**: +1 WIS Edge
-- **Effort Rating**: 5 WIS (3 base + 2 primary), 3 others
+- **SP Contribution**: Moderate (moderate CON and STR, low DEX)
+- **Starting Skills**: 3 divine skills (Divine Channel, Sacred Ward, Spiritual Guidance)
+- **Defense Pools**: Moderate SP, moderate AP from armor
+- **Special**: ×1.2 injury multiplier (slightly fragile)
 
 #### Warlock - The Pact-Bound
-- **Primary Pool**: Charisma (18) - Force of personality and willpower
-- **Secondary Pool**: Constitution (15) - Resilience against otherworldly forces
-- **Tertiary Pools**: Dexterity (12), Wisdom (12) - Agility and perception
-- **Quaternary Pools**: Strength (10), Intelligence (10)
+- **Pool Distribution**: CHA (18), CON (14), DEX (12), WIS (10), STR (8), INT (9)
 - **Core Role**: Eldritch blaster, social manipulator, occult specialist
-- **Starting HP**: 10 + (CON pool max / 3) = 10 + 5 = 15 HP
-- **Starting Edge**: +1 CHA Edge
-- **Effort Rating**: 5 CHA (3 base + 2 primary), 3 others
+- **SP Contribution**: Moderate (good CON, moderate DEX, weak STR)
+- **Starting Skills**: 3 eldritch skills (Eldritch Mastery, Pact Power, Soul Burn)
+- **Defense Pools**: Moderate SP, light AP
+- **Special**: ×1.5 injury multiplier (somewhat fragile)
 
 #### Bard - The Versatile Performer
-- **Primary Pool**: Charisma (18) - Performance and inspiration
-- **Secondary Pool**: Dexterity (15) - Grace and versatility
-- **Tertiary Pools**: Intelligence (12), Wisdom (12) - Knowledge and insight
-- **Quaternary Pools**: Strength (10), Constitution (10)
+- **Pool Distribution**: CHA (18), DEX (14), INT (12), WIS (12), CON (10), STR (8)
 - **Core Role**: Support caster, skill generalist, team enabler
-- **Starting HP**: 10 + (CON pool max / 3) = 10 + 3 = 13 HP
-- **Starting Edge**: +1 CHA Edge
-- **Effort Rating**: 5 CHA (3 base + 2 primary), 3 others
+- **SP Contribution**: Moderate (good DEX, weak STR and CON)
+- **Starting Skills**: 3 social/support skills (Inspiring Presence, Silver Tongue, Natural Leader)
+- **Defense Pools**: Moderate SP from DEX, light AP
+- **Special**: ×2.0 injury multiplier (very fragile)
 
 ### Step 2: Choose Your Archetype (Level 4)
 
@@ -212,33 +192,40 @@ Backgrounds provide additional pool bonuses, skills, and roleplay hooks:
 - **Equipment**: Small knife, city map, pet mouse
 - **Connection**: Street contacts and urban knowledge
 
-### Step 4: Calculate Derived Statistics
+### Step 4: Calculate Defense Pools
 
-#### Armor Class
-**AC = 10 + (DEX pool max / 5) + Armor Bonus + Shield Bonus**
+The system uses two defense pools (see Defense System document):
 
-*Examples:*
-- Fighter with DEX 12: AC = 10 + 2 + armor
-- Rogue with DEX 18: AC = 10 + 3 + armor
+#### Stamina Points (SP) - Combat Endurance
+**SP = 15 + (STR Pool ÷ 4) + (CON Pool ÷ 4) + (DEX Pool ÷ 4)**
 
-#### Hit Points
-**Starting HP = Class Base + (CON pool max / 3) + Background bonus**
+*Examples by Class:*
+- **Barbarian** (STR 14, CON 16, DEX 10): 15 + 3 + 4 + 2 = 24 SP
+- **Fighter** (STR 16, CON 14, DEX 12): 15 + 4 + 3 + 3 = 25 SP
+- **Rogue** (STR 9, CON 8, DEX 16): 15 + 2 + 2 + 4 = 23 SP
+- **Wizard** (STR 8, CON 10, DEX 12): 15 + 2 + 2 + 3 = 22 SP
 
-*Class Base HP:*
-- Fighter: 12, Barbarian: 14
-- Ranger: 11, Cleric: 10, Warlock: 10, Bard: 10
-- Rogue: 10
-- Wizard: 8
+#### Armor Points (AP) - Equipment Protection
+**AP = Armor Value + Shield Value**
+
+*Armor AP Values:*
+- Leather: 10 AP, Chain: 16 AP, Plate: 18 AP
+- Shield: +2 AP
+- No Armor: 0 AP (unless skills provide natural AP)
+
+#### Starting SP Examples
+- **High SP Classes**: Fighters and Barbarians (24-25 SP) excel at sustained combat
+- **Moderate SP Classes**: Rogues and Clerics (22-24 SP) balance offense and defense  
+- **Low SP Classes**: Wizards and Bards (20-22 SP) must avoid direct confrontation
 
 #### Initiative
-**Initiative = 1d20 + (DEX pool max / 5) + DEX Edge + pool points spent**
+**Initiative = 1d20 + DEX modifier + skill bonuses**
 
-*Alternative (some classes):*
-**Initiative = 1d20 + (WIS pool max / 5) + WIS Edge + pool points spent**
+*Some skills provide initiative bonuses (Quick Thinking, Lightning Reflexes)*
 
-#### Passive Scores
-**Passive Perception = 10 + (WIS pool max / 5) + Perception proficiency + WIS Edge**
-**Passive Insight = 10 + (WIS pool max / 5) + Insight proficiency + WIS Edge**
+#### Passive Scores  
+**Passive Perception = 10 + WIS modifier + proficiency + skill bonuses**
+**Passive Insight = 10 + WIS modifier + proficiency + skill bonuses**
 
 ### Step 5: Choose Starting Skills
 
@@ -258,22 +245,22 @@ Each class provides skill training choices:
 Each class begins with specific gear packages:
 
 #### Fighter Starting Equipment
-- Scale mail (AC 14) or leather armor (AC 11) + 150 gold
-- Shield (+2 AC)
+- Scale mail (AP 14) or leather armor (AP 10) + 150 gold
+- Shield (+2 AP)
 - Martial weapon of choice (longsword, battleaxe, etc.)
 - Light crossbow with 20 bolts or two handaxes
 - Dungeoneer's pack or explorer's pack
-- Chain mail if proficient (AC 16)
+- Chain mail if proficient (AP 16)
 
 #### Rogue Starting Equipment
-- Leather armor (AC 11)
+- Leather armor (AP 10)
 - Two shortswords or rapier and shortsword
 - Shortbow with 20 arrows
 - Burglar's pack or dungeoneer's pack
 - Thieves' tools and two daggers
 
 #### Ranger Starting Equipment
-- Scale mail (AC 14) or leather armor (AC 11)
+- Scale mail (AP 14) or leather armor (AP 10)
 - Two shortswords or two simple melee weapons
 - Longbow with 20 arrows
 - Explorer's pack
@@ -287,28 +274,28 @@ Each class begins with specific gear packages:
 - Four javelins
 
 #### Wizard Starting Equipment
-- No armor (AC based on DEX only)
+- No armor (rely entirely on SP for defense)
 - Quarterstaff or dagger
 - Component pouch or arcane focus
 - Scholar's pack or explorer's pack
 - Spellbook with 6 1st-level spells
 
 #### Cleric Starting Equipment
-- Scale mail (AC 14) or leather armor (AC 11)
-- Shield (+2 AC)
+- Scale mail (AP 14) or leather armor (AP 10)
+- Shield (+2 AP)
 - Light crossbow or simple weapon
 - Holy symbol and priest's pack
-- Chain mail if proficient (AC 16)
+- Chain mail if proficient (AP 16)
 
 #### Warlock Starting Equipment
-- Leather armor (AC 11)
+- Leather armor (AP 10)
 - Simple weapon and light crossbow with 20 bolts
 - Two daggers or simple melee weapon
 - Dungeoneer's pack or scholar's pack
 - Arcane focus
 
 #### Bard Starting Equipment
-- Leather armor (AC 11)
+- Leather armor (AP 10)
 - Rapier or longsword
 - Musical instrument of choice
 - Entertainer's pack or diplomat's pack
@@ -328,9 +315,9 @@ Each level provides **+3 total pool points**:
 - **Levels 13-16**: +5
 - **Levels 17-20**: +6
 
-### Edge Progression
-- **Level 1**: +1 Edge in primary pool
-- **Level 5, 9, 13, 17**: Gain +1 Edge to any pool (max 3 per pool)
+### Skill Access Progression
+- **Level 1**: Access to basic skills from your class
+- **Level 5, 9, 13, 17**: Gain access to advanced skills with higher pool requirements
 
 ### Class Feature Progression
 
@@ -411,7 +398,7 @@ Instead of traditional feats, characters can choose specialized pool improvement
 
 #### Combat Feats
 - **Weapon Master**: +2 to primary combat pool, weapon proficiencies
-- **Armor Expert**: +1 AC, +2 to CON pool for armor endurance
+- **Armor Expert**: +1 AP bonus, enhanced armor effectiveness
 - **Shield Specialist**: Enhanced shield bonuses, +2 STR or DEX
 
 #### Skill Feats
@@ -429,7 +416,7 @@ Instead of traditional feats, characters can choose specialized pool improvement
 ### Quick Creation Steps
 1. **Choose Class** → Sets pool priorities and role
 2. **Choose Background** → Adds +4 total pool points and skills  
-3. **Calculate Stats** → AC, HP, Initiative, Passive scores
+3. **Calculate Stats** → AC, SP, Initiative, Passive scores
 4. **Select Skills** → Based on class and background options
 5. **Choose Equipment** → Class starting package or buy individually
 6. **Plan Progression** → Decide archetype and advancement goals
