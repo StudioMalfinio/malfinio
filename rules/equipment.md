@@ -9,7 +9,7 @@ This equipment system provides the tools characters need for adventure, from wea
 ## Weapons
 
 ### Weapon Damage Formula
-**Base Damage**: Weapon dice + (pool max / 5) + optional pool points spent
+**Base Damage**: Weapon dice + ability modifier + skill bonuses
 - **Melee**: Use STR pool (or DEX for finesse weapons)
 - **Ranged**: Use DEX pool
 - **Two-Handed Bonus**: +1 damage when wielded with both hands
@@ -98,7 +98,7 @@ This equipment system provides the tools characters need for adventure, from wea
 #### Range
 - **Thrown**: Can be used for melee or ranged attacks
 - **Format**: Short range/long range in squares
-- **Long Range**: -2 attack or spend 2 DEX points to negate
+- **Long Range**: -2 attack (negated by Archer's Eye or Long Shot skills)
 
 #### Reach
 - **Benefit**: Attack enemies 2 squares away instead of 1
@@ -122,35 +122,35 @@ This equipment system provides the tools characters need for adventure, from wea
 
 ## Armor and Shields
 
-### Armor Class Calculation
-**AC = 10 + Armor Bonus + DEX Bonus (up to armor limit) + Shield Bonus**
-- **DEX Bonus**: (DEX pool max / 5) up to armor limit
-- **Pool Enhancement**: Can reactively spend DEX points for +1 AC per point against single attack
+### Armor Points (AP) System
+**AP = Base Armor AP + Shield AP Bonus**
+- **Function**: Absorbs damage before it reaches Stamina Points
+- **Recovery**: Full AP restored on long rest, partial on short rest with armor repair
 
 ### Light Armor
 *No DEX bonus limitation, allows full agility*
 
-| Armor | AC | DEX Limit | Properties | Cost | Weight |
-|-------|----|-----------|-----------|----- |--------|
-| Padded | 11 + DEX | No limit | Disadvantage on stealth | 5 gp | 8 lb |
-| Leather | 11 + DEX | No limit | — | 10 gp | 10 lb |
-| Studded Leather | 12 + DEX | No limit | — | 45 gp | 13 lb |
+| Armor | AP | Properties | Cost | Weight |
+|-------|----|-----------|----- |--------|
+| Padded | 8 | Disadvantage on stealth | 5 gp | 8 lb |
+| Leather | 10 | — | 10 gp | 10 lb |
+| Studded Leather | 12 | — | 45 gp | 13 lb |
 
 ### Medium Armor
 *Limited DEX bonus, balanced protection*
 
-| Armor | AC | DEX Limit | Properties | Cost | Weight |
-|-------|----|-----------|-----------|----- |--------|
-| Hide | 12 + DEX (max 2) | +2 | — | 10 gp | 12 lb |
-| Chain Shirt | 13 + DEX (max 2) | +2 | — | 50 gp | 20 lb |
-| Scale Mail | 14 + DEX (max 2) | +2 | Disadvantage on stealth | 50 gp | 45 lb |
-| Breastplate | 14 + DEX (max 2) | +2 | — | 400 gp | 20 lb |
-| Half Plate | 15 + DEX (max 2) | +2 | Disadvantage on stealth | 750 gp | 40 lb |
+| Armor | AP | Properties | Cost | Weight |
+|-------|----|-----------|----- |--------|
+| Hide | 12 | — | 10 gp | 12 lb |
+| Chain Shirt | 13 | — | 50 gp | 20 lb |
+| Scale Mail | 14 | Disadvantage on stealth | 50 gp | 45 lb |
+| Breastplate | 14 | — | 400 gp | 20 lb |
+| Half Plate | 15 | Disadvantage on stealth | 750 gp | 40 lb |
 
 ### Heavy Armor
 *No DEX bonus, maximum protection*
 
-| Armor | AC | STR Req | Properties | Cost | Weight |
+| Armor | AP | STR Req | Properties | Cost | Weight |
 |-------|----|---------|-----------|----- |--------|
 | Ring Mail | 14 | — | Disadvantage on stealth | 30 gp | 40 lb |
 | Chain Mail | 16 | STR 13 | Disadvantage on stealth | 75 gp | 55 lb |
@@ -159,8 +159,8 @@ This equipment system provides the tools characters need for adventure, from wea
 
 ### Shields
 
-| Shield | AC Bonus | Properties | Cost | Weight |
-|--------|---------|-----------|----- |--------|
+| Shield | AP Bonus | Properties | Cost | Weight |
+|--------|----------|-----------|----- |--------|
 | Buckler | +1 | Can be used with finesse weapons for dual-wielding | 5 gp | 2 lb |
 | Shield | +2 | Standard shield, most common | 10 gp | 6 lb |
 | Tower Shield | +3 | Provides three-quarters cover when used defensively, heavy | 50 gp | 15 lb |
@@ -312,7 +312,7 @@ This equipment system provides the tools characters need for adventure, from wea
 
 ### Pool Interaction
 - **High STR Pool**: Greater carrying capacity
-- **STR Edge**: Reduces effective weight of carried items
+- **Powerful Build**: Doubles carrying capacity from STR-based skill
 - **Equipment Efficiency**: Quality gear weighs less but costs more
 
 ## Special Materials and Enhancements
@@ -320,7 +320,7 @@ This equipment system provides the tools characters need for adventure, from wea
 ### Weapon Materials
 | Material | Benefit | Cost Modifier |
 |----------|---------|---------------|
-| Masterwork | +1 to attack rolls, counts as pool Edge | +300 gp |
+| Masterwork | +1 to attack rolls, enhances combat skills | +300 gp |
 | Silvered | Overcomes some resistances | +100 gp |
 | Cold Iron | Effective against fey creatures | +200 gp |
 | Adamantine | Ignores hardness, cuts through materials | +5,000 gp |
@@ -328,7 +328,7 @@ This equipment system provides the tools characters need for adventure, from wea
 ### Armor Materials
 | Material | Benefit | Cost Modifier |
 |----------|---------|---------------|
-| Masterwork | +1 AC, reduces stealth penalty by 1 | +150 gp |
+| Masterwork | +1 SP, reduces stealth penalty by 1 | +150 gp |
 | Mithral | Light weight, no stealth penalty | +4,000 gp |
 | Adamantine | Critical hits become normal hits | +500 gp |
 | Dragon Scale | Resistance to specific damage type | +2,000 gp |
@@ -336,9 +336,9 @@ This equipment system provides the tools characters need for adventure, from wea
 ## Integration with Pool System
 
 ### Pool Enhancement Gear
-- **Edge Equipment**: Items that grant Edge in specific pools
+- **Skill-Enhancing Gear**: Items that enhance specific skill effectiveness
 - **Efficiency Items**: Reduce pool point costs for certain activities
-- **Amplification Gear**: Increase maximum Effort Rating
+- **Enhancement Gear**: Provide bonuses to skill-based abilities
 - **Recovery Items**: Enhance pool restoration rates
 
 ### Pool Restrictions
@@ -356,14 +356,14 @@ This equipment system provides the tools characters need for adventure, from wea
 ## Quick Reference
 
 ### Weapon Damage
-**Melee**: Weapon dice + (STR pool max / 5) + pool points
-**Finesse**: Weapon dice + (DEX pool max / 5) + pool points  
-**Ranged**: Weapon dice + (DEX pool max / 5) + pool points
+**Melee**: Weapon dice + STR modifier + combat skill bonuses
+**Finesse**: Weapon dice + DEX modifier + combat skill bonuses  
+**Ranged**: Weapon dice + DEX modifier + combat skill bonuses
 **Two-Handed**: +1 damage bonus
 
-### Armor Class
-**AC = 10 + Armor Bonus + DEX Bonus (limited) + Shield Bonus**
-**Reactive Defense**: Spend DEX points for +1 AC per point vs single attack
+### Defense Summary
+**SP**: Combat endurance from STR/CON/DEX for blocking, dodging, absorbing blows
+**AP**: Protection from armor, shields, and magical defenses
 
 ### Common Equipment Costs
 - **Simple Weapon**: 1 sp - 5 gp

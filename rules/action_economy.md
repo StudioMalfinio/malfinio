@@ -1,20 +1,21 @@
 # Action Economy System
 
-*Streamlined combat actions integrating pool mechanics with tactical choice*
+*Streamlined combat actions integrating skill mechanics with tactical choice*
 
 ## Overview
 
-This system defines how characters act during combat rounds, combining D&D 5e's familiar action types with our six-pool spending system for enhanced tactical options.
+This system defines how characters act during combat rounds, combining D&D 5e's familiar action types with our skill-based enhancement system for tactical options.
 
 ## Initiative System
 
 ### Initiative Order
-- **Initiative Roll**: 1d20 + (DEX pool max / 5) + Edge + pool points (declared before rolling)
-- **Alternative**: Use WIS pool instead of DEX for characters who rely on awareness over speed
-- **Act in Order**: Highest to lowest, with ties going to higher DEX/WIS pool value
+- **Initiative Roll**: 1d20 + DEX modifier + relevant skill bonuses
+- **Alternative**: Use WIS modifier + Danger Sense or other perception skills for awareness-based initiative
+- **Act in Order**: Highest to lowest, with ties going to higher DEX/WIS modifier
 
-### Pool-Enhanced Initiative
-- **Spend DEX Points**: Add +1 per point spent on initiative roll (within Effort limits)
+### Skill-Enhanced Initiative
+- **Lightning Reflexes**: Provides +3 to initiative and allows regaining reaction
+- **Quick Thinking**: Provides +2 to initiative and extra action on first round
 - **Delay Initiative**: Choose to act later in the round, can interrupt before any character's turn
 - **Ready Action**: Set specific trigger to act during someone else's turn
 
@@ -48,7 +49,7 @@ Choose one:
 ### One Bonus Action (If Available)
 - **Class Features**: Many abilities use bonus actions
 - **Two-Weapon Fighting**: Attack with off-hand weapon
-- **Pool Abilities**: Quick recovery or enhancement actions
+- **Skill Abilities**: Active skill effects that use bonus actions
 - **Spell Casting**: Some spells have bonus action casting time
 
 ### Unlimited Free Actions
@@ -59,28 +60,28 @@ Choose one:
 
 ### Reactions (If Triggered)
 - **Opportunity Attacks**: Strike when enemy leaves your melee range
-- **Defensive Abilities**: Block, parry, or counter-attack
+- **Defensive Abilities**: Block, parry, or counter-attack enhanced by defensive skills
 - **Spell Reactions**: Cast spells with reaction timing
-- **Pool Reactions**: Spend points for immediate defensive bonuses
+- **Skill Reactions**: Abilities like Iron Stance or Guardian that use reactions
 
-## Pool-Enhanced Actions
+## Skill-Enhanced Actions
 
-### Extra Actions
-- **Second Standard Action**: Spend 4 points from any pool
-- **Second Bonus Action**: Spend 2 points from any pool  
-- **Extra Movement**: Spend 1 DEX point per 3 additional squares moved
+### Extra Actions from Skills
+- **Action Surge** (Fighter): Gain extra action once per rest
+- **Quick Thinking**: Extra action on first round of combat
+- **Natural Leader**: Grant ally extra action on their turn
 - **Limitations**: Cannot take the same action twice (no double attacks with same weapon)
 
 ### Enhanced Movement Options
-- **Sprint**: Spend standard action + 2 DEX points for 12 squares movement, cannot attack
-- **Disengage Plus**: Spend 2 DEX points to avoid opportunity attacks for entire turn
-- **Charge**: Move 4+ squares toward enemy, spend 1 STR point for +2 damage but -2 AC until next turn
-- **Tactical Reposition**: Spend 3 DEX points to move without provoking opportunity attacks
+- **Sprint**: Use standard action for double movement, cannot attack
+- **Acrobat**: Ignore difficult terrain, move through enemy spaces without provoking
+- **Fast Movement**: Barbarian and other skills provide +10 feet base movement
+- **Lightning Reflexes**: Provides bonus movement and initiative
 
-### Quick Recovery Actions
-- **Second Wind**: Spend 2 CON points + bonus action to recover 1d6 + (CON pool max / 5) hit points
-- **Focus**: Spend 2 WIS points + bonus action to recover 1d4 points to any pool
-- **Rally**: Spend 2 CHA points + bonus action to let ally spend reaction to move or take free action
+### Recovery Actions
+- **Second Wind**: Fighter ability, bonus action to recover SP without resource cost
+- **Regeneration**: Passive healing when below half SP from CON-based skill
+- **Natural Leader**: Inspire ally to take additional actions
 
 ## Combat Round Flow
 
@@ -92,27 +93,25 @@ Choose one:
 ### 2. Action Phase
 Each character on their turn:
 1. **Declare Actions**: State intended standard action and movement
-2. **Declare Pool Spending**: Announce points spent for action enhancement
+2. **Apply Skill Bonuses**: Skills provide automatic bonuses to relevant actions
 3. **Resolve Movement**: Move up to speed, split before/after action if desired
-4. **Resolve Action**: Perform standard action with pool bonuses applied
+4. **Resolve Action**: Perform standard action with skill bonuses applied
 5. **Resolve Bonus Action**: If available and desired
 6. **End Turn**: Check for ongoing effects, conditions
 
 ### 3. Reaction Timing
 - **During Other Turns**: React to triggers as they occur
 - **Simultaneous Resolution**: Multiple reactions to same trigger resolve in initiative order
-- **Pool Spending**: Can spend points on reaction rolls normally
+- **Skill Enhancement**: Defensive skills enhance reaction abilities
 
 ## Special Action Rules
 
-### Broken State Interactions
-When a pool reaches 0, immediate consequences apply:
-- **STR 0**: Cannot make attacks until end of turn, drop held items
-- **DEX 0**: No movement this turn, cannot take reactions
-- **CON 0**: Skip entire next turn (winded)
-- **INT 0**: Lose concentration, cannot cast spells requiring components
-- **WIS 0**: Cannot take reactions until end of turn
-- **CHA 0**: Cannot communicate or use social abilities this turn
+### Injury State Interactions
+When SP reaches 0, injury accumulation begins:
+- **Minor Injuries**: -1 to relevant rolls, manageable pain
+- **Moderate Injuries**: -2 to rolls, significant hindrance
+- **Major Injuries**: -3 to rolls, severe limitations
+- **Critical Injuries**: Incapacitated, requires immediate medical attention
 
 ### Multiple Enemies
 - **Group Actions**: Similar enemies can act simultaneously to speed play
@@ -143,7 +142,7 @@ When a pool reaches 0, immediate consequences apply:
 When timing is unclear:
 1. **All Parties Roll**: Use relevant skill (DEX for speed, INT for tactics)
 2. **Highest Acts First**: Then resolve in descending order
-3. **Pool Spending**: Can enhance these timing rolls normally
+3. **Skill Enhancement**: Relevant allocated skills enhance timing rolls
 
 ## Advanced Tactics
 
@@ -153,10 +152,10 @@ When timing is unclear:
 - **Combined Actions**: Multiple characters coordinate complex maneuvers
 
 ### Resource Management
-- **Conservative Play**: Save pool points for crucial moments
-- **Aggressive Bursts**: Spend heavily for decisive advantages  
-- **Emergency Reserves**: Keep minimum pools for defense
-- **Recovery Planning**: Balance action economy with pool regeneration
+- **Active Abilities**: Manage limited-use skill abilities carefully
+- **AP/SP**: Balance tactical damage allocation choices
+- **Class Resources**: Manage spell slots, rage uses, etc.
+- **Recovery Planning**: Balance action economy with rest-based recovery
 
 ### Battlefield Control
 - **Positioning**: Use movement to control engagement range
@@ -173,18 +172,17 @@ When timing is unclear:
 - **Reaction**: Response to triggers (opportunity attacks, etc.)
 - **Free Actions**: Communication, simple interactions
 
-### Pool Enhancement Costs
-- **Extra Standard Action**: 4 points any pool
-- **Extra Bonus Action**: 2 points any pool
-- **Additional Movement**: 1 DEX point per 3 squares
-- **Enhanced Initiative**: 1 DEX/WIS point per +1 bonus
+### Skill-Based Action Enhancement
+- **Extra Actions**: From specific skills like Action Surge or Quick Thinking
+- **Movement Bonuses**: From skills like Acrobat, Fast Movement, Lightning Reflexes
+- **Initiative Bonuses**: From Lightning Reflexes (+3), Quick Thinking (+2), Danger Sense (+2)
 
 ### Initiative Options
-- **Standard**: 1d20 + (DEX pool max / 5) + Edge + pool points
-- **Awareness**: 1d20 + (WIS pool max / 5) + Edge + pool points  
+- **Standard**: 1d20 + DEX modifier + relevant skill bonuses
+- **Awareness**: 1d20 + WIS modifier + perception skill bonuses (like Danger Sense)  
 - **Delay**: Choose to act later in round
 - **Ready**: Set trigger for specific action
 
 ---
 
-*This action economy balances familiar D&D structure with the tactical depth of pool resource management.*
+*This action economy balances familiar D&D structure with the tactical depth of skill-based character building.*

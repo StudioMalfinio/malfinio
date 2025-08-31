@@ -9,22 +9,22 @@
 
 #### Improved Critical (Level 3)
 - **Effect**: Weapon attacks score critical hits on 19-20
-- **Pool Enhancement**: Can spend STR/DEX points on critical hits for extra damage
+- **Skill Enhancement**: Combat skills like Power Strike can enhance critical hits
 - **Stacking**: Does not stack with other critical range increases
 
 #### Remarkable Athlete (Level 7)
 - **Effect**: Add half proficiency bonus to STR, DEX, CON checks without proficiency
-- **Pool Integration**: Combines with pool spending for exceptional athletic feats
-- **Calculation**: (Proficiency / 2) + (pool max / 5) + pool spending
+- **Skill Integration**: Combines with physical skills for exceptional athletic feats
+- **Calculation**: (Proficiency / 2) + ability modifier + skill bonuses
 
 #### Superior Critical (Level 15)
 - **Effect**: Weapon attacks score critical hits on 18-20
 - **Replaces**: Improved Critical
-- **Pool Enhancement**: Critical hits with pool spending become devastating
+- **Skill Enhancement**: Critical hits with combat skills become devastating
 
 #### Survivor (Level 18)
-- **Effect**: Regain 5 + CON modifier HP at start of turn if below half HP and not at 0
-- **Pool Enhancement**: Can spend CON points for additional healing
+- **Effect**: Regain 5 + CON modifier SP at start of turn if below half SP and not at 0
+- **Skill Enhancement**: Regeneration and other CON skills can provide additional healing
 - **Trigger**: Automatic at start of each turn when conditions are met
 
 ### Battle Master
@@ -33,35 +33,35 @@
 #### Combat Superiority (Level 3)
 - **Superiority Dice**: 4d8 per short/long rest (increases to 5d8 at 7th, 6d8 at 15th)
 - **Die Improvement**: d8 becomes d10 at 10th level, d12 at 18th level
-- **Pool Enhancement**: Spend STR points to increase maneuver damage
+- **Skill Enhancement**: Combat skills provide additional bonuses to maneuvers
 - **Maneuvers Known**: 3 at 3rd level, +2 at 7th, 10th, 15th levels
 
 #### Sample Maneuvers (Choose from List)
 **Precision Attack**
 - **Use**: Add superiority die to attack roll
-- **Pool Enhancement**: Can spend STR/DEX points for additional accuracy
+- **Skill Enhancement**: Weapon Master and Marksman provide additional accuracy
 
 **Riposte**  
 - **Trigger**: Enemy misses you with melee attack
 - **Effect**: Reaction attack + superiority die damage
-- **Pool Enhancement**: Spend STR points for extra damage
+- **Skill Enhancement**: Combat skills enhance the riposte damage
 
 **Trip Attack**
 - **Effect**: Add superiority die to damage, target makes STR save or falls prone
-- **DC**: 8 + proficiency + (STR pool max / 5)
-- **Pool Enhancement**: Spend STR points to increase save DC
+- **DC**: 8 + proficiency + STR modifier
+- **Skill Enhancement**: Combat skills can increase the save DC
 
 #### Know Your Enemy (Level 7)  
 - **Use**: 1 minute observation or interaction
 - **Information**: Learn if target is equal, superior, or inferior in:
-  - Pool totals compared to yours
+  - Combat ability compared to yours
   - Fighter levels compared to yours
-  - AC compared to yours
+  - Defensive capabilities compared to yours
 
 #### Relentless (Level 15)
 - **Effect**: Regain one superiority die if none remaining at start of turn
 - **Limitation**: Once per turn
-- **Pool Integration**: Regained die can be enhanced with pool spending normally
+- **Skill Integration**: Regained die can be enhanced with combat skills normally
 
 ### Defender
 *Protection specialist and damage mitigation expert*
@@ -70,23 +70,23 @@
 - **Trigger**: Allied creature within 5 feet attacked
 - **Effect**: Reaction to impose disadvantage on attack roll
 - **Requirements**: Must be wielding shield
-- **Pool Enhancement**: Can spend STR points to potentially block entirely
+- **Skill Enhancement**: Guardian and Shield Wall skills provide additional protection
 
 #### Defensive Tactics (Level 7)
 **Choose One:**
-- **Shield Wall**: +1 AC when adjacent to ally with shield
+- **Shield Wall**: +1 AP when adjacent to ally with shield
 - **Stalwart**: Advantage on saves against being frightened  
 - **Armor Expert**: Reduce incoming damage by 1 per turn
 
 #### Protective Spirit (Level 15)
 - **Effect**: When ally within 10 feet takes damage, you can take half as reaction
-- **Pool Enhancement**: Spend CON points to reduce damage you take
+- **Skill Enhancement**: Defensive skills reduce damage you take
 - **Limitation**: Once per turn
 
 #### Guardian's Resolve (Level 18)
-- **Effect**: Regain all uses of Protection when you drop to 0 HP
+- **Effect**: Regain all uses of Protection when you drop to 0 SP
 - **Bonus**: Next attack against the creature that dropped you has advantage
-- **Pool Enhancement**: Can spend remaining pool points on the revenge attack
+- **Skill Enhancement**: Combat skills enhance the revenge attack
 
 ## Rogue Archetypes
 
@@ -96,12 +96,12 @@
 #### Bonus Proficiencies (Level 3)
 - **Tools**: Disguise kit, poisoner's kit
 - **Languages**: Two languages of choice
-- **Pool Integration**: Can spend CHA points to enhance disguises
+- **Skill Integration**: Social skills enhance disguises and infiltration
 
 #### Assassinate (Level 3)
 - **Surprise**: Advantage on attacks against creatures that haven't acted yet
 - **Critical**: Hits against surprised creatures are automatic critical hits
-- **Pool Enhancement**: Can spend DEX points on assassinate attacks for massive damage
+- **Skill Enhancement**: Stealth Master and combat skills make assassinate attacks devastating
 
 #### Infiltration Expertise (Level 9)
 - **Identity Creation**: Spend 25 days and 25 gold to create false identity
@@ -117,8 +117,8 @@
 #### Death Strike (Level 17)
 - **Trigger**: Hit surprised creature with attack
 - **Effect**: Target makes CON save or takes double damage
-- **DC**: 8 + proficiency + (DEX pool max / 5)
-- **Pool Enhancement**: Spend DEX points to increase save DC
+- **DC**: 8 + proficiency + DEX modifier
+- **Skill Enhancement**: Stealth and combat skills increase save DC
 
 ### Thief
 *Master of locks, traps, and heists*
@@ -128,16 +128,16 @@
   - Use thieves' tools (pick locks, disable traps)
   - Use object (activate magic item, drink potion)
   - Sleight of Hand check
-- **Pool Enhancement**: Can spend DEX points on any of these actions
+- **Skill Enhancement**: DEX-based skills enhance speed and effectiveness
 
 #### Second-Story Work (Level 3)
 - **Climbing**: Climbing doesn't cost extra movement
 - **Running Jump**: Distance increases by DEX modifier feet
-- **Pool Enhancement**: Spend DEX points for incredible athletic feats
+- **Skill Enhancement**: Acrobat and Lightning Reflexes provide incredible athletic feats
 
 #### Supreme Sneak (Level 9)
 - **Advantage**: Stealth checks when moving at half speed
-- **Pool Enhancement**: Can spend DEX points to move at full speed while hidden
+- **Skill Enhancement**: Stealth Master allows full speed movement while hidden
 - **Silent**: No sound from movement or equipment
 
 #### Use Magic Device (Level 13)
@@ -148,7 +148,7 @@
 #### Thief's Reflexes (Level 17)
 - **Extra Turn**: Take second turn during first round of combat
 - **Initiative**: Use either turn to act
-- **Pool Enhancement**: Can spend DEX points on actions during both turns
+- **Skill Enhancement**: Lightning Reflexes and combat skills enhance both turns
 
 ### Trickster
 *Magical deception and illusion specialist*
@@ -184,17 +184,17 @@
 - **Animal**: Choose beast of CR 1/4 or lower with no flying speed
 - **Bond**: Acts on your initiative, obeys your commands
 - **Growth**: Gains hit dice, proficiency bonus increases as yours does
-- **Pool Enhancement**: Can spend WIS points to enhance companion's actions
+- **Skill Enhancement**: Nature-based skills enhance companion's capabilities
 
 #### Exceptional Training (Level 7)
 - **Attack Command**: Companion can attack when you command (no action needed)
 - **Opportunity Attacks**: Companion can make opportunity attacks
-- **Pool Enhancement**: Spend WIS points to give companion advantage
+- **Skill Enhancement**: Animal handling skills provide companion advantage
 
 #### Bestial Fury (Level 11)
 - **Extra Attack**: Companion makes two attacks when you command it to attack
 - **Critical**: Companion scores critical hits on 19-20
-- **Pool Enhancement**: Can spend WIS points on companion's attack rolls
+- **Skill Enhancement**: Beast Master skills enhance companion's attacks
 
 #### Share Spells (Level 15)
 - **Range**: Spells targeting you can also target companion within 30 feet
@@ -206,14 +206,14 @@
 
 #### Hunter's Prey (Level 3)
 **Choose One:**
-- **Colossus Slayer**: +1d8 damage to creature below max HP (once per turn)
+- **Colossus Slayer**: +1d8 damage to creature below max SP (once per turn)
 - **Giant Killer**: Opportunity attack when Large+ creature attacks you
 - **Horde Breaker**: Extra attack against different creature within 5 feet
 
 #### Defensive Tactics (Level 7)
 **Choose One:**
 - **Escape the Horde**: Opportunity attacks against you have disadvantage
-- **Multiattack Defense**: +4 AC against subsequent attacks from same creature
+- **Multiattack Defense**: +4 SP against subsequent attacks from same creature
 - **Steel Will**: Advantage on saves against frightened
 
 #### Multiattack (Level 11)
@@ -270,18 +270,18 @@
 #### Mindless Rage (Level 6)
 - **Immunity**: Cannot be charmed or frightened while raging
 - **Ongoing**: If already charmed/frightened, effects are suspended
-- **Pool Enhancement**: Can spend CON points to extend rage duration
+- **Skill Enhancement**: Constitution-based skills can extend rage effects
 
 #### Intimidating Presence (Level 10)
 - **Action**: Frighten creature within 30 feet as action
-- **Save**: WIS save against DC 8 + proficiency + (CHA pool max / 5)
+- **Save**: WIS save against DC 8 + proficiency + CHA modifier
 - **Duration**: Frightened until end of next turn, immune for 24 hours after save
-- **Pool Enhancement**: Spend CHA points to increase save DC or affect multiple targets
+- **Skill Enhancement**: Intimidating Presence skill increases save DC or affects multiple targets
 
 #### Retaliation (Level 14)
 - **Trigger**: Take damage from creature within 5 feet
 - **Effect**: Make melee weapon attack as reaction
-- **Pool Enhancement**: Can spend STR points on retaliatory attacks
+- **Skill Enhancement**: Combat skills enhance retaliatory attacks
 - **Frequency**: Once per turn
 
 ### Totem Warrior
@@ -322,7 +322,7 @@
 
 **Desert**: All other creatures take 2 fire damage per turn (increases with level)
 **Sea**: Choose one creature, they take 1d6 lightning damage (save for half)  
-**Tundra**: Grant temporary HP equal to half barbarian level to chosen ally
+**Tundra**: Grant temporary SP equal to half barbarian level to chosen ally
 
 #### Storm Soul (Level 6)
 **Desert**: Resistance to fire damage, extreme heat doesn't affect you

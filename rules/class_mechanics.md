@@ -1,32 +1,32 @@
 # Class Mechanics
 
-*Detailed abilities for non-magical classes and their pool interactions*
+*Detailed abilities for non-magical classes and their skill interactions*
 
 ## Fighter Mechanics
 
 ### Second Wind
 - **Use**: Bonus action, once per short/long rest
-- **Effect**: Spend 1-6 CON points, regain that many + 1d10 + Fighter level HP
-- **Pool Enhancement**: Spending more CON points increases healing directly
-- **Example**: Level 5 Fighter spends 4 CON points → regains 4 + 1d10 + 5 HP
+- **Base Effect**: Regain 1d10 + Fighter level SP
+- **Skill Enhancement**: Can be improved with CON-based healing skills
+- **Example**: Level 5 Fighter regains 1d10 + 5 SP, potentially more with skill bonuses
 
 ### Action Surge
 - **Use**: Once per short/long rest (twice at level 17)
 - **Effect**: Take one additional action on your turn
-- **Pool Enhancement**: Can spend STR points normally on the extra action
+- **Skill Enhancement**: Combat skills apply normally to the extra action
 - **Tactical Use**: Allows two full attacks, or attack + dash, etc.
 
 ### Indomitable
 - **Use**: Once per long rest (2/rest at 13th, 3/rest at 17th)
 - **Effect**: Reroll a failed saving throw, must use new roll
-- **Pool Enhancement**: Can spend relevant pool points on the reroll
-- **Example**: Failed WIS save, reroll and spend 3 WIS points for +3
+- **Skill Enhancement**: Relevant skills apply to the reroll
+- **Example**: Failed WIS save, reroll with WIS-based skill bonuses
 
 ### Extra Attacks
 - **Level 5**: Two attacks per action
 - **Level 11**: Three attacks per action  
 - **Level 20**: Four attacks per action
-- **Pool Enhancement**: Can spend STR/DEX points on each attack separately
+- **Skill Enhancement**: Combat skills apply to all attacks made
 - **Note**: Only applies to Attack action, not other actions
 
 ## Rogue Mechanics
@@ -37,38 +37,38 @@
   - Finesse or ranged weapon
   - Advantage on attack OR ally within 5 feet of target
   - No disadvantage on attack
-- **Pool Enhancement**: Can spend DEX points for attack accuracy but not damage
+- **Skill Enhancement**: DEX-based combat skills apply to attack accuracy
 - **Frequency**: Once per turn (not once per round)
 
 ### Cunning Action
 - **Use**: Bonus action every turn
 - **Options**: Dash, Disengage, or Hide
-- **Pool Enhancement**: 
-  - Dash: Can spend DEX points for extra movement
-  - Disengage: Works without pool spending
-  - Hide: Can spend DEX points for stealth bonus
+- **Skill Enhancement**: 
+  - Dash: DEX-based movement skills provide additional movement
+  - Disengage: Works without skill requirements
+  - Hide: Stealth skills provide bonus to hiding attempts
 
 ### Expertise
 - **Level 1**: Choose 2 skills, double proficiency bonus
 - **Level 6**: Choose 2 more skills
-- **Pool Interaction**: Expertise applies to (pool max / 5) + proficiency calculation
-- **Stacking**: Expertise + pool spending makes rogues extremely capable
+- **Skill Interaction**: Expertise applies to proficiency portion of skill checks
+- **Stacking**: Expertise + allocated skills makes rogues extremely capable
 
 ### Uncanny Dodge
 - **Use**: Reaction when taking damage from one attacker
 - **Effect**: Halve the damage from that attack
-- **Pool Enhancement**: Can spend CON points to reduce remaining damage further
+- **Skill Enhancement**: Defensive skills may provide additional damage reduction
 - **Limitation**: Once per turn, only works on single-target attacks
 
 ### Evasion
 - **Effect**: DEX save for half damage becomes no damage on success
 - **Failed Save**: Still take half damage instead of full
-- **Pool Enhancement**: Can spend DEX points on the save as normal
+- **Skill Enhancement**: DEX-based defensive skills apply to the save
 - **Area Immunity**: Makes rogues excellent at avoiding fireballs, breath weapons
 
 ### Reliable Talent
 - **Effect**: Treat any d20 roll of 9 or lower as 10 for skill checks you're proficient in
-- **Pool Interaction**: Roll minimum 10, then add (pool max / 5) + proficiency + Edge + spending
+- **Skill Interaction**: Roll minimum 10, then add proficiency + allocated skill bonuses
 - **Expertise**: Combined with expertise, makes failure nearly impossible
 
 ## Ranger Mechanics
@@ -76,7 +76,7 @@
 ### Favored Enemy
 - **Choose**: One creature type (beasts, fey, humanoids, monstrosities, etc.)
 - **Benefit**: Advantage on WIS (Survival) checks to track and INT checks for information
-- **Pool Enhancement**: Can spend WIS or INT points on these rolls for even better results
+- **Skill Enhancement**: Tracking and knowledge skills provide additional bonuses
 - **Additional Choices**: Gain additional favored enemies at levels 6 and 14
 
 ### Natural Explorer
@@ -89,7 +89,7 @@
 
 ### Fighting Style (Level 2)
 - **Archery**: +2 bonus to ranged weapon attack rolls
-- **Defense**: +1 AC while wearing armor
+- **Defense**: +1 AP while wearing armor
 - **Dueling**: +2 damage when wielding one-handed weapon with no other weapons
 - **Two-Weapon Fighting**: Add ability modifier to damage of second attack
 
@@ -97,7 +97,7 @@
 - **Casting**: Bonus action, 1st level spell
 - **Effect**: Mark target for 1 hour, extra 1d6 damage when you hit it
 - **Movement**: When marked creature dies, move mark to new creature as bonus action
-- **Pool Enhancement**: Can spend WIS points to increase duration or damage
+- **Skill Enhancement**: Magic skills can increase duration or damage
 
 ## Barbarian Mechanics
 
@@ -109,33 +109,33 @@
   - Resistance to bludgeoning, piercing, slashing damage
   - Advantage on STR checks and saves
 - **Restrictions**: Can't cast spells or concentrate on spells
-- **Pool Enhancement**: 
-  - Can spend STR points normally during rage
-  - Cannot spend INT, WIS, or CHA points while raging
+- **Skill Enhancement**: 
+  - STR-based skills apply normally during rage
+  - Cannot activate INT, WIS, or CHA skill abilities while raging
 - **Ending**: Ends early if you don't attack or take damage during turn
 
 ### Unarmored Defense
-- **AC Calculation**: 10 + (DEX pool max / 5) + (CON pool max / 5)
+- **Effect**: While unarmored, natural toughness provides protection
+- **SP Bonus**: +2 SP per barbarian level
+- **Skill Enhancement**: DEX and CON defensive skills provide additional protection
 - **Restriction**: No armor, shields allowed
-- **Pool Growth**: AC improves as CON and DEX pools increase
-- **Example**: DEX 15, CON 18 = AC 10 + 3 + 3 = 16
 
 ### Reckless Attack
 - **Use**: First attack on your turn
 - **Effect**: Gain advantage on STR-based attacks this turn
 - **Drawback**: Attacks against you have advantage until your next turn
-- **Pool Enhancement**: Can spend STR points on advantaged attacks normally
+- **Skill Enhancement**: STR-based combat skills apply to advantaged attacks
 - **Tactical**: High risk, high reward combat option
 
 ### Danger Sense
 - **Effect**: Advantage on DEX saves against effects you can see
 - **Examples**: Traps, spells, dragon breath
-- **Pool Enhancement**: Can spend DEX points on these saves
+- **Skill Enhancement**: DEX-based defensive skills apply to these saves
 - **Limitation**: Must not be blinded, deafened, or incapacitated
 
 ### Fast Movement
 - **Effect**: +10 feet movement while not wearing heavy armor
-- **Pool Enhancement**: Can spend DEX points for additional movement as normal
+- **Skill Enhancement**: DEX-based movement skills provide additional movement
 - **Stacking**: Combines with other movement bonuses
 
 ## Universal Class Mechanics
@@ -153,54 +153,53 @@ Level 17-20: +6
 - **Each Level**: +3 pool points total
 - **Primary Pool**: +1 automatic
 - **Player Choice**: +2 distributed as desired
-- **Multiclass**: Follow new class's primary pool for automatic bonus
+- **Skill Allocation**: Pool points used to maintain active skills
 
-### Edge Progression
-- **Level 1**: +1 Edge in primary pool
-- **Level 5, 9, 13, 17**: +1 Edge to any pool (max 3 per pool)
-- **Multiclass**: No additional starting Edge
+### Skill Unlock Progression
+- **Level 1**: Access to basic class skills
+- **Level 5, 9, 13, 17**: Access to advanced class skills with higher requirements
+- **Multiclass**: Gain access to new class's skill categories
 
 ### Ability Score Improvements
 - **Levels**: 4, 8, 12, 16, 19 (some classes get extras)
 - **Pool System**: Instead of +2 to one ability or +1 to two abilities:
   - **+1 to any single pool** (represents focused improvement)
-  - **Feat Alternative**: Choose pool-based feat instead
+  - **Feat Alternative**: Choose skill-based feat instead
 
 ## Death and Dying Mechanics
 
 ### Death Saves
-- **Trigger**: Start turn at 0 HP
-- **Roll**: 1d20 + (CON pool max / 5) + CON Edge + CON points spent
+- **Trigger**: Start turn at 0 SP
+- **Roll**: 1d20 + CON modifier + relevant skill bonuses
 - **Success**: 10 or higher (3 successes to stabilize)
 - **Failure**: Below 10 (3 failures to die)
-- **Critical Success (20)**: Regain 1 HP immediately
+- **Critical Success (20)**: Regain 1 SP immediately
 - **Critical Failure (1)**: Counts as 2 failures
 
 ### Massive Damage
-- **Trigger**: Damage exceeds current HP max in single blow
+- **Trigger**: Damage exceeds current SP max in single blow
 - **Effect**: Immediate death (no death saves)
-- **Pool Buffer**: If pools can absorb overflow, may survive
+- **Defense Buffer**: AP may absorb some overflow damage
 
-### Pool Overflow Damage
-When HP reaches 0, excess damage goes to pools:
-1. **First**: Constitution pool
-2. **Second**: Strength pool  
-3. **Third**: Dexterity pool
-- **Critical Injury**: Roll on table when pools take damage from attacks
+### Injury Accumulation
+When SP reaches 0, excess damage accumulates as injury points:
+- **Accumulation**: Damage × class multiplier (Wizard ×2, Barbarian ×0.5)
+- **Thresholds**: 20+ minor, 40+ moderate, 60+ major, 80+ critical injuries
+- **Recovery**: Injuries heal with time and medical treatment
 
 ## Short and Long Rest Benefits
 
 ### Short Rest (1 hour)
-- **Pool Recovery**: Roll 1d6 + character level, distribute among depleted pools
+- **SP Recovery**: Regain SP equal to CON modifier + level
 - **Class Features**: Some abilities recharge (Action Surge, etc.)
 - **Frequency**: Once per encounter/scene
 
 ### Long Rest (8 hours)
-- **Pool Recovery**: All pools return to maximum
-- **HP Recovery**: All hit points restored
+- **SP Recovery**: All stamina points restored
+- **AP Recovery**: All Armor Points restored
 - **Class Features**: All abilities recharge
 - **Frequency**: Once per day
 
 ---
 
-*These mechanics provide the foundation for tactical, resource-based gameplay while maintaining the familiar feel of class-based progression.*
+*These mechanics provide the foundation for tactical, skill-based gameplay while maintaining the familiar feel of class-based progression.*

@@ -1,43 +1,56 @@
 # Magic System
 
-*Pool-based spellcasting integrating with the six-pool hybrid system*
+*Skill-based spellcasting integrating with the pool allocation system*
 
 ## Overview
 
-Magic in this system combines traditional D&D spell slots with pool enhancement mechanics. Spellcasters use their mental pools (Intelligence, Wisdom, Charisma) to power magic while still maintaining the familiar spell level structure.
+Magic in this system requires allocating pool points to magic skills rather than spending them for temporary enhancements. Spellcasters must dedicate portions of their mental pools (Intelligence, Wisdom, Charisma) to maintain their magical abilities, creating strategic choices about magical power versus versatility.
 
 ## Core Spellcasting Mechanics
 
 ### Spell Attack Rolls
-**Formula**: 1d20 + proficiency + (casting pool max / 5) + Edge + pool points spent
+**Formula**: 1d20 + proficiency + magic skill bonuses
 
-- **Wizard**: 1d20 + proficiency + (INT pool max / 5) + INT Edge + INT points spent
-- **Cleric**: 1d20 + proficiency + (WIS pool max / 5) + WIS Edge + WIS points spent
-- **Warlock/Bard**: 1d20 + proficiency + (CHA pool max / 5) + CHA Edge + CHA points spent
+**Examples by Class**:
+- **Wizard**: 1d20 + proficiency + INT-based magic skill bonuses
+- **Cleric**: 1d20 + proficiency + WIS-based magic skill bonuses
+- **Warlock/Bard**: 1d20 + proficiency + CHA-based magic skill bonuses
 
 ### Spell Save DC
-**Formula**: 8 + proficiency + (casting pool max / 5) + Edge + pool points spent
+**Formula**: 8 + proficiency + relevant ability modifier + magic skill bonuses
 
-- **Example**: Level 5 Wizard with INT 18 → DC 8 + 3 + 3 + Edge + spending
-- **Enhancement**: Can spend pool points to increase DC for individual spells
+**Examples**:
+- Level 5 Wizard with INT 18: DC 8 + 3 + 4 + skill bonuses
+- Level 3 Cleric with WIS 16: DC 8 + 2 + 3 + skill bonuses
 
-### Pool Enhancement Options
-When casting any spell, casters can spend pool points for:
+### Magic Skills Enhancement
+Magic skills provide various enhancements to spellcasting:
 
-#### Accuracy Enhancement
-- **Cost**: 1 pool point = +1 to spell attack roll
-- **Use**: Declare before rolling attack
-- **Example**: Spending 3 INT points on Fire Bolt for +3 to hit
+#### Spell Power Skills
+**Spell Mastery** (6 INT - Wizard only)
+- Passive: +2 to spell attack rolls and save DCs
+- Active: Cast spell at +1 caster level (once per long rest)
 
-#### Save DC Enhancement
-- **Cost**: 1 pool point = +1 to spell save DC
-- **Use**: Declare when casting spell that requires save
-- **Example**: Spending 2 WIS points to make Hold Person DC 17 instead of 15
+**Divine Authority** (5 WIS + 1 CHA - Cleric only)
+- Passive: +1 to spell save DCs, healing spells heal +2 SP
+- Active: Next spell affects double the normal targets
 
-#### Damage Enhancement (Limited)
-- **Cost**: 2 pool points = +1 damage per die rolled
-- **Use**: Only on damage-dealing spells
-- **Example**: Spending 4 INT points on Fireball adds +2 to each damage die
+**Eldritch Power** (6 CHA - Warlock only)
+- Passive: Eldritch Blast gains +2 damage per beam
+- Active: Next spell regains the spell slot used (once per long rest)
+
+#### Utility Magic Skills
+**Spell Matrix** (4 INT - Wizard)
+- Passive: Prepare +2 spells beyond normal limit
+- Active: Change one prepared spell during short rest
+
+**Ritual Master** (3 INT + 2 WIS - Any caster)
+- Passive: All ritual spells take half normal time
+- Active: Cast any spell you know as a ritual (once per long rest)
+
+**Arcane Shield** (3 INT - Wizard/Warlock)
+- Passive: +2 SP when concentrating on spells
+- Active: Absorb targeted spell, gain spell slot of same level (reaction)
 
 ## Spell Slot Progression
 
@@ -68,30 +81,30 @@ When casting any spell, casters can spend pool points for:
 
 ### Pact Casters (Warlock)
 
-| Level | Slots | Slot Level | Invocations |
-|-------|-------|------------|-------------|
-| 1     | 1     | 1st        | -           |
-| 2     | 2     | 1st        | 2           |
-| 3     | 2     | 2nd        | 2           |
-| 4     | 2     | 2nd        | 2           |
-| 5     | 2     | 3rd        | 3           |
-| 6     | 2     | 3rd        | 3           |
-| 7     | 2     | 4th        | 4           |
-| 8     | 2     | 4th        | 4           |
-| 9     | 2     | 5th        | 5           |
-| 10    | 2     | 5th        | 5           |
-| 11    | 3     | 5th        | 5           |
-| 12    | 3     | 5th        | 6           |
-| 13    | 3     | 5th        | 6           |
-| 14    | 3     | 5th        | 6           |
-| 15    | 3     | 5th        | 7           |
-| 16    | 3     | 5th        | 7           |
-| 17    | 4     | 5th        | 7           |
-| 18    | 4     | 5th        | 8           |
-| 19    | 4     | 5th        | 8           |
-| 20    | 4     | 5th        | 8           |
+| Level | Slots | Slot Level | 
+|-------|-------|------------|
+| 1     | 1     | 1st        |
+| 2     | 2     | 1st        |
+| 3     | 2     | 2nd        |
+| 4     | 2     | 2nd        |
+| 5     | 2     | 3rd        |
+| 6     | 2     | 3rd        |
+| 7     | 2     | 4th        |
+| 8     | 2     | 4th        |
+| 9     | 2     | 5th        |
+| 10    | 2     | 5th        |
+| 11    | 3     | 5th        |
+| 12    | 3     | 5th        |
+| 13    | 3     | 5th        |
+| 14    | 3     | 5th        |
+| 15    | 3     | 5th        |
+| 16    | 3     | 5th        |
+| 17    | 4     | 5th        |
+| 18    | 4     | 5th        |
+| 19    | 4     | 5th        |
+| 20    | 4     | 5th        |
 
-### Third Casters (Bard - Magic Light Version)
+### Third Casters (Bard)
 
 | Level | 1st | 2nd | 3rd | 4th | 5th | Inspirations |
 |-------|-----|-----|-----|-----|-----|--------------|
@@ -125,9 +138,10 @@ When casting any spell, casters can spend pool points for:
 - **Level 17-20**: Quadruple dice or maximum effect
 
 ### Cantrip Enhancement
-- **Pool Spending**: Can spend 1-2 pool points to enhance cantrips
-- **Effects**: +1 damage per die, +1 to attack, +1 to save DC
-- **Limitation**: Cannot exceed normal spell enhancement limits
+Magic skills can enhance cantrips:
+- **Cantrip Mastery** (2 INT/WIS/CHA): Cantrips gain +1 damage per die
+- **Spell Weaving** skills may allow casting multiple cantrips
+- **Eldritch Power** enhances Eldritch Blast specifically
 
 ### Sample Cantrips by Class
 
@@ -158,11 +172,11 @@ When casting any spell, casters can spend pool points for:
 ## Concentration Mechanics
 
 ### Concentration Saves
-**Formula**: 1d20 + proficiency + (CON pool max / 5) + CON Edge + CON points spent
+**Formula**: 1d20 + proficiency + CON modifier + relevant skill bonuses
 
-- **DC**: 10 or half damage taken, whichever is higher
-- **Pool Enhancement**: Spend CON points for +1 per point to save
-- **Automatic Failure**: If CON pool reaches 0, lose concentration
+**DC**: 10 or half damage taken, whichever is higher
+**Skills**: Some CON-based skills provide concentration bonuses
+**Automatic Failure**: Never occurs unless specified by injury or condition
 
 ### Concentration Limits
 - **One Spell**: Only one concentration spell at a time
@@ -174,74 +188,83 @@ When casting any spell, casters can spend pool points for:
 ### Wizard Features
 
 #### Arcane Recovery (Level 1)
-- **Use**: Once per long rest after short rest
-- **Effect**: Recover spell slots totaling half wizard level (rounded up)
-- **Pool Cost**: Spend INT points equal to spell level recovered
-- **Example**: Level 6 wizard can recover 3 levels worth, spending equivalent INT points
+**Traditional Feature**: Once per long rest after short rest, recover spell slots totaling half wizard level
+**Skill Integration**: Magic skills can enhance this recovery
 
 #### Spell Mastery (Level 18)
-- **Effect**: Choose one 1st and one 2nd level spell, cast at will without spending slots
-- **Pool Enhancement**: Can still spend INT points to enhance these spells
-- **Limitation**: Cannot change selected spells
+**Effect**: Choose one 1st and one 2nd level spell, cast at will without spending slots
+**Skill Integration**: Magic skills still apply to these spells
+**Limitation**: Cannot change selected spells
+
+#### Arcane Tradition Benefits
+Each wizard tradition unlocks specific magic skills:
+- **Evocation**: Spell power and damage skills
+- **Divination**: Information and foresight skills  
+- **Enchantment**: Mind control and social magic skills
 
 ### Cleric Features
 
 #### Channel Divinity (Level 2)
-- **Uses**: 1 per short/long rest (2 at 6th, 3 at 18th)
-- **Options**: Turn Undead, domain-specific options
-- **Pool Enhancement**: Spend WIS points to enhance effects
-- **Turn Undead**: WIS save or become frightened and must dash away
+**Uses**: 1 per short/long rest (2 at 6th, 3 at 18th)
+**Options**: Turn Undead, domain-specific options
+**Skill Integration**: Divine magic skills can enhance effects
+**Turn Undead**: WIS save or become frightened and must dash away
 
 #### Divine Intervention (Level 10)
-- **Use**: Once per long rest (once per week if successful)
-- **Roll**: d100, succeed on roll ≤ cleric level
-- **Pool Enhancement**: Spend 5 WIS points for automatic success
-- **Effect**: Divine entity intervenes on your behalf
+**Use**: Once per long rest (once per week if successful)
+**Roll**: d100, succeed on roll ≤ cleric level
+**Skill Enhancement**: Certain divine skills provide bonuses or automatic success
+**Effect**: Divine entity intervenes on your behalf
+
+#### Divine Domain Benefits
+Each domain provides access to specific divine magic skills:
+- **Life Domain**: Healing enhancement skills
+- **War Domain**: Combat blessing skills
+- **Trickery Domain**: Stealth and deception magic skills
 
 ### Warlock Features
 
 #### Eldritch Invocations
-- **Gained**: 2 at 2nd level, additional at 5th, 7th, 9th, 12th, 15th, 18th
-- **Effects**: Permanent magical abilities and spell-like powers
-- **Pool Integration**: Many invocations can be enhanced with CHA points
-
-**Sample Invocations**:
-- **Agonizing Blast**: Add CHA modifier to eldritch blast damage
-- **Devil's Sight**: See in magical darkness up to 120 feet  
-- **Misty Step Invocation**: Cast misty step at will
-- **Detect Magic**: Cast detect magic at will
+**Gained**: 2 at 2nd level, additional at higher levels
+**Nature**: Many invocations are actually skills requiring CHA allocation
+**Examples**: Agonizing Blast, Devil's Sight, Misty Step at will
 
 #### Pact Boons (Level 3)
-- **Pact of the Chain**: Familiar with special abilities
-- **Pact of the Blade**: Summon magical weapon
-- **Pact of the Tome**: Additional cantrips and ritual spells
+**Integration**: Pact boons unlock specific skill categories
+- **Pact of the Chain**: Familiar enhancement skills
+- **Pact of the Blade**: Weapon magic skills
+- **Pact of the Tome**: Ritual and knowledge skills
 
 ### Bard Features
 
 #### Bardic Inspiration (Level 1)
-- **Uses**: CHA modifier per short/long rest (more at higher levels)
-- **Action**: Bonus action to grant inspiration die to ally
-- **Die Size**: d6 (improves to d8, d10, d12 at higher levels)
-- **Pool Enhancement**: Spend CHA points to add extra dice
-- **Use**: Ally can add die to attack, save, or ability check
+**Uses**: CHA modifier per short/long rest
+**Action**: Bonus action to grant inspiration die to ally
+**Die Size**: d6 (improves with level)
+**Skill Enhancement**: CHA-based skills can enhance inspiration
+**Use**: Ally adds die to attack, save, or ability check
 
 #### Song of Rest (Level 2)
-- **Effect**: Party regains extra HP during short rest
-- **Bonus**: 1d6 per bard level in additional healing
-- **Pool Enhancement**: Spend CHA points for additional d6s
+**Effect**: Party regains extra SP during short rest
+**Bonus**: Additional healing based on bard level
+**Skill Enhancement**: Performance skills can improve this benefit
+
+#### Magical Secrets
+**Function**: Learn spells from other classes
+**Skill Integration**: Can learn magic skills from other classes with GM permission
 
 ## Ritual Casting
 
 ### Ritual Rules
 - **Casting Time**: +10 minutes to normal casting time
 - **No Slot Cost**: Doesn't consume spell slots
-- **Pool Enhancement**: Can still spend pool points for enhancement
+- **Skill Enhancement**: Magic skills still apply
 - **Limitation**: Only spells with ritual tag, must know the spell
 
 ### Class Ritual Access
 - **Wizard**: All ritual spells in spellbook
-- **Cleric**: Domain ritual spells + some general rituals
-- **Warlock**: Through Pact of the Tome or specific invocations
+- **Cleric**: Domain ritual spells + general rituals
+- **Warlock**: Through Pact of the Tome or specific skills
 - **Bard**: Limited ritual access through Magical Secrets
 
 ## Spell Lists (Sample)
@@ -251,18 +274,18 @@ When casting any spell, casters can spend pool points for:
 #### Wizard
 - **Burning Hands**: 15-foot cone, DEX save, 3d6 fire damage
 - **Magic Missile**: 3 darts, 1d4+1 force damage each, auto-hit
-- **Shield**: Reaction, +5 AC until start of next turn
+- **Shield**: Reaction, +5 SP until start of next turn
 - **Detect Magic**: Sense magical auras within 30 feet
 
 #### Cleric
-- **Cure Wounds**: Touch, heal 1d8 + casting modifier HP
+- **Cure Wounds**: Touch, heal 1d8 + casting modifier SP
 - **Bless**: 3 creatures gain 1d4 bonus to attacks and saves
 - **Guiding Bolt**: Attack, 4d6 radiant + next attack has advantage
 - **Sanctuary**: Protection from being targeted by enemies
 
 #### Warlock
 - **Hex**: Bonus action, extra 1d6 necrotic damage + disadvantage on one ability
-- **Armor of Agathys**: 5 temporary HP + 5 cold damage to attackers
+- **Armor of Agathys**: 5 temporary SP + 5 cold damage to attackers
 - **Arms of Hadar**: 10-foot radius, STR save or 2d6 necrotic + restrained
 - **Charm Person**: WIS save or charmed for 1 hour
 
@@ -274,18 +297,18 @@ When casting any spell, casters can spend pool points for:
 
 ## Magic Item Integration
 
-### Pool-Enhanced Magic Items
-- **Staffs and Wands**: Reduce pool point cost for certain spell types
-- **Arcane Focuses**: +1 to spell attack rolls and save DCs
-- **Spell Scrolls**: Can enhance with pool points when casting
-- **Magic Weapons**: May add spell-like effects enhanced by pools
+### Skill-Enhanced Magic Items
+- **Staffs and Wands**: Enhance related magic skills when attuned
+- **Arcane Focuses**: Provide bonuses to specific spell types
+- **Spell Scrolls**: Can benefit from magic skills when casting
+- **Magic Weapons**: May provide weapon-magic combination skills
 
 ### Magic Item Attunement
 - **Slots**: 3 attuned items maximum
-- **Requirements**: May require specific pool minimums
-- **Pool Interaction**: Some items draw from your pools for power
-- **Enhancement**: Items may amplify your pool-based spellcasting
+- **Requirements**: May require specific magic skills or pool allocations
+- **Skill Interaction**: Some items work better with certain skill builds
+- **Enhancement**: Items may enhance or unlock new magic skills
 
 ---
 
-*This magic system maintains familiar D&D spellcasting while integrating seamlessly with the tactical resource management of the pool system.*
+*This magic system transforms spellcasting from resource spending to strategic skill allocation, creating consistent magical power based on your build choices while maintaining the familiar spell slot structure.*
