@@ -1,215 +1,224 @@
-# Core Mechanics: Six-Pool System
+# Core Mechanics: Six-Pool Allocation System
 
-*The foundation of our hybrid TTRPG combining flexible resource management with tactical gameplay*
+*The foundation of our hybrid TTRPG combining strategic skill allocation with tactical gameplay*
 
 ## Overview
 
-This system replaces both D&D's fixed attribute modifiers and Cypher System's fixed 3-point effort costs with a flexible point-spending system where players can spend any number of points from their pools for equivalent bonuses.
+This system transforms traditional attributes into strategic resource pools. Instead of spending pools for temporary dice roll bonuses, you allocate pool points to activate skills and abilities that define your character's capabilities. Pools become your "character build currency" rather than expendable combat resources.
 
 ## The Six Pools
 
 ### Strength Pool
-- **Function**: Physical power, melee combat, breaking objects, lifting, climbing
-- **Combat Uses**: Melee attack rolls, damage rolls for strength-based weapons
-- **Skill Uses**: Athletics, intimidation through physical presence
+- **Function**: Physical power, melee combat, athletic feats
+- **Allocation Uses**: Combat skills, physical abilities, intimidation powers
+- **Skill Examples**: Weapon Master, Power Strike, Intimidating Presence
 
 ### Dexterity Pool  
-- **Function**: Agility, reflexes, ranged combat, dodging, stealth
-- **Combat Uses**: Ranged attack rolls, AC bonus, initiative
-- **Skill Uses**: Acrobatics, sleight of hand, stealth
+- **Function**: Agility, reflexes, precision, stealth
+- **Allocation Uses**: Evasion skills, precision abilities, mobility powers
+- **Skill Examples**: Combat Reflexes, Lightning Dodge, Blade Dance
 
 ### Constitution Pool
-- **Function**: Health, endurance, stamina, disease resistance
-- **Combat Uses**: Death saves, concentration saves, damage absorption
-- **Skill Uses**: Endurance tasks, resisting environmental effects
-- **Special**: Acts as secondary HP buffer (see Damage & Recovery)
+- **Function**: Health, endurance, resistance, recovery
+- **Allocation Uses**: Defensive skills, health abilities, endurance powers
+- **Skill Examples**: Thick Skin, Regeneration, Iron Stance
 
 ### Intelligence Pool
-- **Function**: Reasoning, memory, knowledge, investigation, arcane magic
-- **Combat Uses**: Knowledge of enemy weaknesses, tactical analysis
-- **Skill Uses**: Investigation, history, arcana, nature, religion
+- **Function**: Reasoning, memory, knowledge, arcane magic
+- **Allocation Uses**: Spell skills, knowledge abilities, tactical powers
+- **Skill Examples**: Spell Matrix, Quick Thinking, Arcane Shield
 
 ### Wisdom Pool
 - **Function**: Perception, insight, willpower, divine connection
-- **Combat Uses**: Initiative (alternative), spotting threats, saving throws
-- **Skill Uses**: Perception, insight, survival, animal handling, medicine
+- **Allocation Uses**: Awareness skills, divine abilities, spiritual powers
+- **Skill Examples**: Danger Sense, Divine Channel, Meditative Trance
 
 ### Charisma Pool
 - **Function**: Social influence, leadership, force of personality
-- **Combat Uses**: Command presence, intimidation, inspiration
-- **Skill Uses**: Persuasion, deception, intimidation, performance
+- **Allocation Uses**: Social skills, leadership abilities, inspiring powers
+- **Skill Examples**: Silver Tongue, Natural Leader, Commanding Presence
 
-## Core Mechanic: Flexible Point Spending
+## Core Mechanic: Skill Allocation
 
-### Basic Rule
-**1 Pool Point = +1 to Dice Roll**
+### Allocation System
+**Pool points are allocated to activate skills, NOT spent on dice rolls**
 
-- Players choose how many points to spend BEFORE rolling
-- Minimum spend: 0 points
-- **Maximum spend per roll**: Limited by Effort Rating (see below)
-- Points are spent whether the roll succeeds or fails
+- **Allocation Time**: During long rests or extended downtime (4+ hours)
+- **Permanent Until Changed**: Allocated points remain locked until reallocation
+- **Multi-Pool Requirements**: Skills can require points from multiple pools
+- **No Active Spending**: Pool points cannot be spent for temporary bonuses
 
-### Effort Rating (Maximum Points per Roll)
-- **Base Effort**: 3 points maximum per roll at level 1
-- **Primary Pool Bonus**: +2 to effort limit for your class's main attribute
-- **Progression**: +1 to base effort every 4 levels
-- **Example**: Level 1 Fighter can spend max 5 STR points per roll (3 base + 2 class), but only 3 for other pools
+### Dice Roll Resolution
+**Base Formula: 1d20 + Proficiency + Skill Bonuses**
 
-### Examples
-- Attack with sword: Spend 3 STR points for +3 to attack roll
-- Stealth past guard: Spend 5 DEX points for +5 to stealth check  
-- Resist poison: Spend 2 CON points for +2 to save
-- Recall ancient history: Spend 4 INT points for +4 to history check
+- **No Pool Spending**: You cannot spend pool points to modify dice rolls
+- **Skill Bonuses**: All bonuses come from allocated skills
+- **Proficiency**: Works normally from class and background
+- **Advantage/Disadvantage**: Functions as standard D&D rules
 
-### Strategic Considerations
-- **Resource Management**: Each point spent reduces your pool
-- **Risk vs Reward**: Spend big for important rolls, conserve for later
-- **Vulnerability**: Lower pools mean less capability for future actions
-- **Planning**: Save points for crucial moments vs spread usage
+### Skill Types
 
-## Pool Values
+#### Passive Skills
+Always active while allocated:
+- **Weapon Master** (4 STR): +2 to all weapon attack rolls
+- **Combat Reflexes** (2 DEX + 1 WIS): +2 SP permanently  
+- **Arcane Shield** (3 INT): +2 SP when concentrating on spells
+
+#### Active Skills  
+Must be triggered with an action:
+- **Power Strike** (3 STR + 1 CON): Next attack deals double damage
+- **Lightning Dodge** (4 DEX): Automatically dodge next attack
+- **Spell Burst** (5 INT): Cast two cantrips as one action
+
+#### Hybrid Skills
+Both passive benefits and active abilities:
+- **Hunter's Focus** (2 WIS + 2 DEX): +1 passive perception, active: mark target for advantage
+
+## Pool Values & Progression
 
 ### Starting Pools (Level 1)
-- **Primary Pool**: 15 points (class's main attribute)
-- **Secondary Pools**: 12 points (important to class)  
-- **Tertiary Pools**: 10 points (less important)
+Distribution based on class focus and player choice:
+
+**Total Points to Distribute: 69**
+- **Minimum per pool**: 8 points
+- **Class Primary**: Typically 15-18 points
+- **Secondary pools**: 10-14 points  
+- **Remaining**: 8-10 points each
 
 ### Pool Progression
-- **Each Level**: +2 points to distribute among pools
-- **Class Primary Attribute**: Always receives +1 automatic
-- **Player Choice**: Distribute remaining +1 point as desired
-
-**Class Primary Attributes:**
-- **Fighter**: STR (strength-based combat)
-- **Rogue**: DEX (agility and precision)
-- **Wizard**: INT (arcane knowledge)
-- **Cleric**: WIS (divine insight)
-- **Warlock**: CHA (force of personality)
-- **Barbarian**: CON (raw endurance)
+- **Each Level**: +3 points to distribute among pools as desired
+- **No Automatic Increases**: Player choice determines all allocation
+- **Respec Option**: Can redistribute pools during major story milestones
 
 ### Example Starting Builds
 
-**Fighter**
-- STR: 15, DEX: 12, CON: 12, INT: 10, WIS: 10, CHA: 10
+**Fighter (STR Primary)**
+- STR: 16, DEX: 12, CON: 14, INT: 8, WIS: 10, CHA: 9
 
-**Rogue**  
-- STR: 10, DEX: 15, CON: 12, INT: 12, WIS: 10, CHA: 10
+**Rogue (DEX Primary)**  
+- STR: 9, DEX: 16, CON: 12, INT: 12, WIS: 12, CHA: 8
 
-**Wizard**
-- STR: 10, DEX: 10, CON: 12, INT: 15, WIS: 12, CHA: 10
+**Wizard (INT Primary)**
+- STR: 8, DEX: 12, CON: 10, INT: 18, WIS: 14, CHA: 9
 
-## Edge Mechanics
+## Defense Integration
 
-Edge represents training, talent, and experience that makes you more efficient with specific attributes.
+### Three Defense Pools
+Characters have separate defensive resources (see Defense System):
 
-### How Edge Works
-Choose one implementation:
+**Stamina Points (SP)**: Combat endurance from STR/CON/DEX
+- Barbarian: 20 + CON mod per level
+- Fighter/Ranger: 15 + CON mod per level  
+- Rogue/Cleric/Warlock: 10 + CON mod per level
+- Wizard/Bard: 5 + CON mod per level
 
-**Option A: Free Bonus**
-- Edge provides bonus without spending points
-- Example: STR Edge 2 = +2 to all STR rolls without cost
+**Armor Points (AP)**: Equipment protection
+- Determined entirely by worn armor and shields
+- No natural AP except through skills
 
-**Option B: Cost Reduction** 
-- Edge reduces point cost for bonuses
-- Example: DEX Edge 1 = spend 2 points, get +3 bonus
+**Stamina Points (SP)**: Combines blocking, dodging, and endurance  
+- Base: 10 + (DEX Pool ÷ 3) + skill bonuses
+- Represents dodging and reflexes in combat
 
-### Starting Edge
-- **Level 1**: 1 point of Edge in class's primary pool
-- **Every 4 Levels**: Gain 1 additional Edge point to assign
+### No Pool Damage
+Pools are never reduced by damage:
+- Attacks reduce SP/AP, never attribute pools
+- Pool allocation remains stable regardless of combat damage
+- Skills stay active unless voluntarily reallocated
 
-### Maximum Edge
-- **Per Pool**: 3 points maximum
-- **Total Edge**: No limit across all pools
+## Skill Learning & Management
 
-## Damage, Broken States & Critical Injuries
+### Starting Skills (Level 1)
+- **Basic Skills**: 3 skills total
+- **Class Requirements**: Some skills restricted by class
+- **Pool Requirements**: Must have sufficient points to activate
 
-### Taking Pool Damage
-1. **Physical Damage**: Reduces target pool directly (STR, DEX, CON)
-2. **Mental Damage**: Reduces mental pools (INT, WIS, CHA)
-3. **Critical Injury Risk**: When pools are reduced by attacks (see Critical Injuries below)
+### Skill Progression
+- **Every 2 Levels**: Learn 1 new skill
+- **Class Features**: Unlock specific powerful skills
+- **Training**: Learn additional skills during downtime
 
-### Broken State (Pool at 0)
-When any pool reaches exactly 0:
+### Reallocation Rules
+- **Long Rest**: Can reallocate all pool points
+- **Short Rest**: Can reallocate 25% of total pools (emergency respec)
+- **Story Milestones**: Major character development allows full reallocation
 
-**Immediate Consequence (One Turn):**
-- **STR**: Drop held items, can't make attacks this turn
-- **DEX**: Stumble, lose all movement this turn  
-- **CON**: Winded/gasping, skip next turn
-- **INT**: Mental blank, lose concentration/spells
-- **WIS**: Disoriented, can't take reactions this turn
-- **CHA**: Speechless, can't communicate this turn
+## Character Differentiation
 
-**Ongoing Broken State:**
-- **Disadvantage** on all checks using that attribute
-- **Cannot spend** from this pool (it's at 0)
-- **Recovery Timer**: Roll 1d6 = rounds (combat) or minutes (exploration) until recovery
-- **Auto-Recovery**: Gain 1 point when timer expires, broken state ends
+### Build Archetypes
 
-### Pushing While Broken (Risk/Reward)
-When broken (pool at 0), you can choose to push for emergency points:
-- **Decision**: Accept critical injury risk for immediate pool points
-- **1 point**: Roll 1d20 on Critical Injury Table
-- **2 points**: Roll 1d40 on Critical Injury Table  
-- **3 points**: Roll 1d60 on Critical Injury Table
-- **Gain Points**: Immediately gain the chosen points to your pool
+**Specialists**: Focus pools heavily in 1-2 areas
+- High-power skills in specialty
+- Limited versatility
+- Extreme effectiveness in chosen area
 
-### Critical Injuries
-You suffer critical injuries when:
-1. **Broken by enemy attack**: Pool reduced to 0 by damage
-2. **Major damage**: Losing 3+ points from a single attack
-3. **Pushing while broken**: Voluntary risk for emergency points
+**Generalists**: Spread pools across 3-4 areas  
+- Moderate skills in multiple areas
+- High adaptability
+- Good at many things, master of few
 
-**Injury Severity by Pool Loss/Gain:**
-- **1-2 points**: Roll 1d20 on Critical Injury Table
-- **3-4 points**: Roll 1d40 on Critical Injury Table
-- **5+ points**: Roll 1d60 on Critical Injury Table
+**Hybrids**: Unusual multi-pool combinations
+- Skills requiring diverse pool allocations
+- Unique capabilities
+- Interesting tactical options
 
-### Recovery Methods
+### Multi-Pool Synergies
+Skills that combine pools create unique builds:
+- **STR + INT**: Scholar-warrior combinations
+- **CHA + CON**: Inspiring tough leaders  
+- **WIS + DEX**: Perceptive scouts
+- **All Pools**: Legendary skills requiring massive investment
 
-**Broken State Recovery**
-- **Automatic**: After 1d6 time units, gain 1 point and exit broken state
-- **Accelerated**: Medicine check (DC 15) can reduce timer by half
+## Strategic Considerations
 
-**Pool Recovery**
-- **Short Rest (10 minutes)**: Roll 1d6 + Character Level, distribute among depleted pools, once per encounter
-- **Long Rest (8 hours)**: Recover all pools to maximum, once per day
-- **Recovery Items/Spells**: Usually restore 1d6 or 2d6 points to chosen pool
+### Pool Management
+- **Allocation Planning**: Consider your party role and expected challenges
+- **Flexibility vs Power**: Specialized builds vs adaptable ones
+- **Skill Synergies**: Combinations that work well together
+- **Future Growth**: Plan for skills you'll learn later
 
-**Critical Injury Healing**
-- **Natural Healing**: Each injury lists its healing time in d6 rolls (see Critical Injury Tables)
-- **Medical Care**: Medicine check (DC 15) allows rerolling 1s on healing dice
-- **Magical Healing**: Can instantly heal or reduce healing dice by half
+### Daily Adaptation
+- **Morning Allocation**: Change skills based on expected day
+- **Emergency Respec**: Use short rest reallocation for surprises
+- **Party Coordination**: Complement allies' skill choices
+- **Environmental Factors**: Some areas may favor certain allocations
+
+### Risk Management
+- **Core Skills**: Always maintain essential abilities
+- **Backup Options**: Keep some unallocated points for flexibility
+- **Situational Skills**: Temporary allocations for specific challenges
+- **Recovery Planning**: Consider how to handle skill disruption
 
 ## Integration with D20 System
 
-### Skill Checks
-- Base roll: 1d20 + proficiency (if applicable)
-- Enhancement: Spend pool points for +1 per point
-- DC remains standard D&D values (10, 15, 20, etc.)
-
 ### Attack Rolls
-- Base roll: 1d20 + proficiency
-- Enhancement: Spend STR/DEX points for bonus
-- AC targets remain unchanged
+- **Base**: 1d20 + proficiency + skill bonuses
+- **No Pool Enhancement**: Cannot spend pools for bonuses
+- **Skill Sources**: All attack bonuses come from allocated skills
+- **Multiple Skills**: Can stack if they apply to the same roll
 
-### Saving Throws  
-- Base roll: 1d20 + proficiency (if applicable)
-- Enhancement: Spend relevant pool points
-- DC set by spells/effects as normal
+### Skill Checks  
+- **Base**: 1d20 + proficiency + skill bonuses  
+- **Skill Enhancement**: Allocated skills provide all bonuses
+- **DC Values**: Standard D&D difficulty classes (10, 15, 20, etc.)
+- **Advantage/Disadvantage**: Works normally with skill bonuses
 
-### Advantage/Disadvantage
-- Works normally with pool spending
-- Spend points AFTER determining which d20 to use
+### Saving Throws
+- **Base**: 1d20 + proficiency + skill bonuses
+- **Skill Sources**: Some skills provide save bonuses
+- **No Pool Spending**: Cannot enhance saves with pools
+- **Class Proficiencies**: Work normally
 
 ## Design Goals Achieved
 
-✅ **Granular Control**: Players choose exact bonus amounts  
-✅ **Resource Management**: Meaningful spending decisions  
-✅ **Risk/Reward**: Big bonuses cost significant resources  
-✅ **Tactical Depth**: Pool conservation vs immediate needs  
-✅ **Character Differentiation**: Edge and pool distributions create unique builds  
-✅ **D&D Compatibility**: Works with existing AC, DC, and proficiency systems
+✅ **Strategic Depth**: Pool allocation creates meaningful long-term decisions  
+✅ **Character Identity**: Your allocations define your capabilities  
+✅ **Tactical Simplicity**: No mid-combat resource spending decisions  
+✅ **Build Diversity**: Infinite combinations through multi-pool skills  
+✅ **Narrative Coherence**: Your training (allocations) persists regardless of damage  
+✅ **D&D Compatibility**: Works with existing proficiency and DC systems  
+✅ **Resource Permanence**: Pools aren't depleted by combat, enabling consistent performance
 
 ---
 
-*Next: Define tactical zones and distance system*
+*This allocation system transforms pools from expendable resources into permanent character definition tools, creating strategic depth without tactical complexity.*

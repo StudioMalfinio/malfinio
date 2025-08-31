@@ -32,17 +32,17 @@ When you gain a level in a class:
 - **Fighter 3/Rogue 1**: Next level goes to Rogue → +1 automatic to DEX, +2 player choice
 - **Wizard 5/Cleric 2**: Next level goes to Cleric → +1 automatic to WIS, +2 player choice
 
-### Edge Progression
-- **Starting Edge**: Only gain when taking first level in a class
-- **Regular Edge**: Gain every 4 total character levels regardless of class split
-- **Example**: Fighter 2/Rogue 1 gains Edge at total level 4 (next level up)
+### Skill Access
+- **Class Skills**: Only gain access to class-specific skills when taking first level in that class
+- **Skill Points**: Distribute pool points to activate skills from any class you have levels in
+- **Example**: Fighter 2/Rogue 1 can use both Fighter combat skills and Rogue stealth skills
 
 ## Class Features
 
-### Hit Points
-- **Formula**: New class's hit die average + (CON pool max / 3)
-- **No Minimum**: Unlike single-class characters, no special HP bonuses
-- **Example**: Fighter 1 (12 HP) taking Wizard → gains 8 + (CON/3) HP
+### Stamina Points
+- **Formula**: 15 + (STR+CON+DEX)/4 (same for all characters)
+- **No Class Bonuses**: SP determined by physical attributes, not class levels
+- **Example**: All characters use same SP calculation regardless of multiclass combination
 
 ### Proficiencies Gained
 Multiclassing grants limited proficiencies from the new class:
@@ -121,18 +121,18 @@ Each class tracks separately:
 - **Spells Prepared**: Wizard, Cleric prepare spells using class levels only
 - **Cantrips**: Total number from all classes combined
 
-### Pool Enhancement
-- **Spell Attacks**: Use the class's pool for the specific spell
-- **Save DCs**: Use the class's pool that granted the spell
-- **Example**: Wizard/Cleric uses INT for wizard spells, WIS for cleric spells
+### Magic Skill Enhancement
+- **Spell Attacks**: Enhanced by allocated magic skills from the relevant class
+- **Save DCs**: Enhanced by allocated magic skills from the class that granted the spell
+- **Example**: Wizard/Cleric can allocate INT to Spell Matrix (wizard skills) and WIS to Divine Channel (cleric skills)
 
 ## Examples of Multiclass Builds
 
 ### Fighter 3/Rogue 2 (Level 5)
 - **Pools**: STR 18+4, DEX 15+4, CON 12+3, others +2 each = STR 22, DEX 19, CON 15, others 12
 - **Features**: Action Surge, Second Wind, Archetype, Sneak Attack 1d6, Cunning Action, Expertise
-- **Edge**: 1 STR Edge (Fighter start) + 1 any Edge (level 5) = distributed as desired
-- **HP**: 12 (Fighter) + 10 (Rogue) + CON bonuses = ~27-30 HP
+- **Skills**: Can allocate pool points to Fighter combat skills and Rogue utility skills
+- **SP**: 15 + (STR+CON+DEX)/4 = calculated based on physical attributes
 
 ### Wizard 5/Cleric 1 (Level 6)  
 - **Caster Level**: 5 + 1 = 6 → 4/3/3/- spell slots
@@ -163,7 +163,7 @@ Each class tracks separately:
 - **Extra Attacks**: Don't stack, take the highest
 - **Unarmored Defense**: Choose one method, can't combine  
 - **Proficiency**: Higher proficiency bonus applies to all classes
-- **Pool Limitations**: Each class's features use their designated pools
+- **Skill Requirements**: Each class's skills have their designated pool requirements
 
 ### Advancement Planning
 - **Early Levels**: Consider prerequisites and immediate benefits

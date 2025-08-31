@@ -4,14 +4,14 @@
 
 ## Overview
 
-This system uses a standard grid where each square = 5 feet. Count squares for movement and ranges, with simple diagonal rules for fast gameplay that integrates with the six-pool system.
+This system uses a standard grid where each square = 5 feet. Count squares for movement and ranges, with simple diagonal rules for fast gameplay that integrates with the skill system.
 
 ## Movement Rules
 
 ### Basic Movement
 - **Standard**: Move 6 squares per turn (30 feet)
 - **Sprint** (full action): Move 12 squares, cannot attack
-- **Pool Boost**: Spend 1 DEX point per 3 extra square moved
+- **Skill Enhancement**: Lightning Reflexes grants +5 movement, Acrobat ignores difficult terrain
 
 ### Distance Calculation
 - **Horizontal/Vertical**: Count squares directly
@@ -21,7 +21,7 @@ This system uses a standard grid where each square = 5 feet. Count squares for m
 ### Special Movement
 - **Difficult Terrain**: Costs 2 movement to enter (mud, stairs, thick brush)
 - **Opportunity Attacks**: Leaving adjacent square to enemy triggers attack
-- **Disengage**: Spend 2 DEX points to avoid opportunity attacks this turn
+- **Disengage**: Use action to avoid opportunity attacks, or use Acrobat skill to move through enemies
 
 ## Weapon Ranges
 
@@ -32,8 +32,8 @@ This system uses a standard grid where each square = 5 feet. Count squares for m
 
 ### Ranged Weapons
 - **Short Range**: 0-6 squares (bows, crossbows)
-- **Long Range**: 7-24 squares (-2 to attack OR spend 2 DEX points)
-- **Extreme Range**: 25+ squares (-4 to attack OR spend 4 DEX points)
+- **Long Range**: 7-24 squares (-2 to attack, reduced by Archer's Eye or Marksman skills)
+- **Extreme Range**: 25+ squares (-4 to attack, Long Shot skill removes range penalties)
 
 ## Area of Effect
 
@@ -52,16 +52,17 @@ This system uses a standard grid where each square = 5 feet. Count squares for m
 ### Flanking
 - **Requirement**: 2+ allies adjacent to same enemy from opposite sides
 - **Benefit**: Advantage
-- **Pool Enhancement**: Spend 1 WIS point for flanking bonus even when alone
+- **Skill Enhancement**: Tactical Genius allows coordination for flanking bonuses
 
 ### Cover
-- **Partial Cover**: +2 AC when target has cover between them and attacker
+- **Partial Cover**: +2 to defensive rolls when target has cover between them and attacker
 - **Full Cover**: Cannot be targeted
 - **High Ground**: +1 to attack rolls when attacking from higher elevation
 
 ### Special Actions
-- **Charge**: Move 4+ squares toward target, then attack (+2 damage, -2 AC until next turn)
+- **Charge**: Move 4+ squares toward target, then attack (+2 damage, -2 SP until next turn)
 - **Ready Action**: Set trigger to attack when enemy enters specific square
+- **Skill Integration**: Movement and combat skills enhance positioning options
 
 ---
 
