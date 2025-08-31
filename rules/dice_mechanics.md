@@ -1,23 +1,20 @@
 # Dice Mechanics System
 
-*Core resolution mechanics integrating d20 rolls with six-pool spending*
+*Core resolution mechanics using skills and proficiency with d20 rolls*
 
 ## Core Resolution System
 
 ### Basic Roll
-- **Standard**: Always roll 1d20 + proficiency + pool bonuses
-- **Pool Enhancement**: Spend pool points BEFORE rolling (1 point = +1 to roll)
-- **Effort Limit**: Maximum spend per roll limited by Effort Rating
-  - Base Effort: 3 points (level 1)
-  - Primary Pool Bonus: +2 to effort limit for class's main attribute  
-  - Progression: +1 to base effort every 4 levels
-- **Points Spent**: Whether roll succeeds or fails
+- **Standard**: Always roll 1d20 + proficiency + skill bonuses
+- **No Pool Spending**: Pool points cannot be spent for temporary bonuses
+- **Skill Enhancement**: All bonuses come from allocated skills
+- **Proficiency**: Based on class training and background
 
 ### The Resolution Process
 1. **Declare Intent**: State what you're attempting
-2. **GM Sets DC**: Difficulty determined
-3. **Spend Pool Points**: Choose amount (within Effort limit)
-4. **Roll Die**: 1d20 + proficiency + (pool max / 5) + Edge + pool points
+2. **GM Sets DC**: Difficulty determined (or skill has fixed DC)
+3. **Apply Skills**: Determine which allocated skills apply
+4. **Roll Die**: 1d20 + proficiency + skill bonuses
 5. **Compare to DC**: Success if total meets or beats DC
 
 ## Difficulty Classes
@@ -50,13 +47,13 @@ Levels 17-20: +6
 ### Training Levels
 - **Untrained**: No proficiency bonus, can still attempt most checks
 - **Trained**: Add full proficiency bonus to rolls
-- **Expert**: Trained + additional +2 bonus
-- **Master**: Trained + additional +4 bonus
+- **Expert**: Trained + additional +2 bonus (from skills/class features)
+- **Master**: Trained + additional +4 bonus (from advanced skills)
 
 ## Types of Rolls
 
 ### Skill Checks
-**Formula**: 1d20 + proficiency (if trained) + (pool max / 5) + Edge + pool points spent
+**Formula**: 1d20 + proficiency (if trained) + skill bonuses
 
 **Applications**:
 - STR: Athletics, climbing, jumping, breaking objects
@@ -66,22 +63,23 @@ Levels 17-20: +6
 - WIS: Perception, insight, survival, animal handling, medicine
 - CHA: Persuasion, deception, intimidation, performance
 
-**Untrained Attempts**: 
-- Most skills can be attempted untrained
-- Some require training (e.g., arcane knowledge, complex medical procedures)
+**Skill Enhancement**: 
+- Allocated skills provide all bonuses
+- Multiple skills can stack if applicable
+- Skills remain active until reallocated
 
 ### Attack Rolls
-**Formula**: 1d20 + proficiency + (pool max / 5) + Edge + pool points spent
+**Formula**: 1d20 + proficiency + skill bonuses
 
 **Types**:
-- **Melee Attacks**: Use STR pool points
-- **Ranged Attacks**: Use DEX pool points  
-- **Spell Attacks**: Use INT/WIS/CHA pool points (depends on spellcaster type)
+- **Melee Attacks**: Enhanced by STR-based skills (Weapon Master, Blade Dance)
+- **Ranged Attacks**: Enhanced by DEX-based skills (Archer's Eye, Marksman)  
+- **Spell Attacks**: Enhanced by magic skills (Spell Weaving, Arcane Mastery)
 
-**Target**: Must meet or exceed target's Armor Class (AC)
+**Target**: Must meet or exceed skill-specific DC or special target number
 
 ### Saving Throws
-**Formula**: 1d20 + proficiency (if proficient) + (pool max / 5) + Edge + pool points spent
+**Formula**: 1d20 + proficiency (if proficient) + skill bonuses
 
 **Save Types**:
 - **STR**: Against being moved, grappled, or restrained
@@ -92,204 +90,108 @@ Levels 17-20: +6
 - **CHA**: Against banishment, personality changes, soul effects
 
 **Proficiency**: Characters are proficient in certain saves based on class
+**Skill Enhancement**: Some skills provide saving throw bonuses
 
 ## Advantage and Disadvantage
 
 ### Basic Rules
 - **Advantage**: Roll 2d20, use the higher result
 - **Disadvantage**: Roll 2d20, use the lower result
-- **Pool Spending**: Declare amount, roll both dice, apply points to chosen die
-- **Normal Roll**: One advantage + one disadvantage = normal roll
+- **Multiple Sources**: Having multiple sources of advantage/disadvantage doesn't stack
+- **Cancellation**: Advantage and disadvantage cancel each other out
 
-### Sources Don't Stack
-- Multiple advantages = still just roll 2d20
-- Multiple disadvantages = still just roll 2d20
-- Cannot gain "super advantage" or "super disadvantage"
+### Skill Interaction
+- **Skills Apply Normally**: Add skill bonuses after determining which die to use
+- **Skill-Granted Advantage**: Some skills provide advantage on specific rolls
+- **No Enhancement**: Cannot spend pool points to gain advantage
 
 ### Common Sources
-**Advantage**:
-- Flanking in combat
-- Help from ally
-- Favorable positioning
-- Proper tools for the job
-- Target is surprised or helpless
+**Advantage Sources**:
+- Favorable circumstances
+- Skill abilities (Hunter's Focus, Combat Reflexes)
+- Ally assistance
+- Environmental benefits
 
-**Disadvantage**:
-- Fighting while prone
-- Shooting into melee combat
-- Bad weather conditions
-- Using improvised tools
-- Acting while injured or exhausted
+**Disadvantage Sources**:
+- Unfavorable circumstances
+- Injuries and conditions
+- Environmental hazards
+- Improper tools
+
+## Group Rolls
+
+### Group Skill Checks
+When multiple characters attempt the same task:
+- **Individual Success**: Each rolls separately
+- **Group Success**: Majority must succeed
+- **Collaborative**: Sum all results, compare to group DC
+
+### Help Action
+- **Requirements**: Helper must be able to assist meaningfully
+- **Benefit**: Advantage on the roll
+- **Limitation**: Only one helper can provide advantage
+- **Skills Apply**: Both characters can use relevant skills
+
+### Passive Checks
+**Formula**: 10 + proficiency + skill bonuses
+
+**Uses**:
+- Passive Perception for detecting hidden things
+- Passive Insight for noticing lies
+- Passive Investigation for spotting clues
+- Background awareness without active searching
+
+## Special Roll Types
+
+### Contested Rolls
+When two characters compete directly:
+- **Both Roll**: 1d20 + proficiency + skill bonuses
+- **Higher Wins**: Ties go to defending character usually
+- **Multiple Attempts**: May allow repeated rolls
+
+### Extended Checks
+For complex tasks requiring time and multiple attempts:
+- **Accumulate Successes**: Need X successes before Y failures
+- **Skills Apply**: Use relevant allocated skills throughout
+- **Time Pressure**: May have rounds or minutes between attempts
+
+### Skill Challenges
+For complex narrative obstacles:
+- **Multiple Skills**: Various approaches accepted
+- **Success Threshold**: Party needs total successes
+- **Consequences**: Failure has specific narrative results
+- **Skill Variety**: Different skills provide different narrative outcomes
 
 ## Critical Success and Failure
 
 ### Natural 20 (Critical Success)
-- **Always Succeeds**: Even if total wouldn't normally meet DC
-- **Attack Rolls**: Deal double damage dice (roll damage dice twice)
-- **Skill Checks**: Achieve exceptional success with extra benefits
-- **Saving Throws**: Completely avoid effect, sometimes gain benefit
+- **Always Succeeds**: Regardless of DC
+- **Enhanced Effect**: GM may grant additional benefits
+- **Not Automatic**: Only on attack rolls and death saves in some cases
+- **Skill Enhancement**: Skills still apply for determining total effect
 
-### Natural 1 (Critical Failure) 
-- **Always Fails**: Even if total would normally meet DC
-- **Attack Rolls**: Miss and potential complication (hit ally, drop weapon, etc.)
-- **Skill Checks**: Fail with additional negative consequence
-- **Saving Throws**: Suffer maximum effect or additional penalty
+### Natural 1 (Critical Failure)
+- **Not Automatic Failure**: For skill checks (only attack rolls auto-fail)
+- **Potential Complications**: GM may add minor negative consequences
+- **Still Add Bonuses**: Skill bonuses still apply to total
 
-### Pool Points and Criticals
-- Pool points still apply to determine final total
-- Cannot turn natural 1 into success or natural 20 into failure
-- Final total still matters for degree of success/failure
+## Integration with Skill System
 
-## Contested Rolls
+### Skill Bonuses
+- **Always Active**: Allocated skills provide constant bonuses
+- **Stacking**: Multiple relevant skills can combine
+- **Specific Situations**: Some skills only apply in certain circumstances
 
-### Basic Procedure
-1. Both parties declare pool point expenditure simultaneously
-2. Both roll 1d20 + proficiency + (pool max / 5) + Edge + pool points
-3. Highest total wins
-4. Ties go to defender or maintaining status quo
+### Active Skill Use
+- **Triggered Abilities**: Some skills have active components
+- **Action Economy**: Active skills follow normal action rules
+- **Limited Uses**: Many active skills have usage restrictions
 
-### Common Contests
-- **Grappling**: STR vs STR (or STR vs DEX)
-- **Deception vs Insight**: CHA vs WIS
-- **Stealth vs Perception**: DEX vs WIS  
-- **Intimidation vs Composure**: CHA vs WIS or CHA
-- **Arm Wrestling**: STR vs STR
-- **Debate**: CHA vs CHA or INT vs INT
-
-## Group Checks
-
-### Standard Group Check
-- Everyone in group rolls the same type of check
-- Success if half or more of the group succeeds
-- Individuals can spend pool points normally
-
-### Group Leader
-- Designated leader can spend pool points to boost one ally's roll
-- Must spend points before any dice are rolled
-- Leader's points count as bonus to chosen ally
-
-### Help Action
-- Use your action to help another character
-- They gain advantage on their next roll
-- You must be able to meaningfully assist
-- For skills, you usually need proficiency to help
-
-## Degrees of Success
-
-### Success Margins
-- **Beat DC by 10+**: Critical success (extraordinary result)
-- **Beat DC by 5-9**: Strong success (better than expected)
-- **Beat DC by 0-4**: Success (achieves goal)
-- **Fail by 1-4**: Failure (doesn't achieve goal)
-- **Fail by 5-9**: Bad failure (complications arise)
-- **Fail by 10+**: Critical failure (serious consequences)
-
-### GM Interpretation
-- Use degrees to narrate outcomes dramatically
-- Critical successes often provide extra information or benefits
-- Critical failures create interesting complications, not just "nothing happens"
-
-## Special Mechanics
-
-### Passive Checks
-**Formula**: 10 + (pool max / 3) + proficiency (if trained) + Edge (no roll)
-
-**Applications**:
-- Passive Perception: 10 + (WIS pool max / 3) + proficiency (if trained) + Edge
-- Passive Insight: 10 + (WIS pool max / 3) + proficiency (if trained) + Edge
-- Passive Investigation: 10 + (INT pool max / 3) + proficiency (if trained) + Edge
-
-**Limitations**:
-- Cannot spend pool points on passive checks
-- Represents baseline competency when not actively rolling
-
-### Taking 10 and Taking 20
-
-#### Taking 10 (Routine Tasks)
-- **When**: Not under pressure, not in danger
-- **Result**: Assume you rolled 10 on the d20
-- **Limitation**: Cannot spend pool points
-- **Use**: For routine tasks where failure isn't critical
-
-#### Taking 20 (Exhaustive Attempts)
-- **When**: Unlimited time, failure has no consequences
-- **Result**: Assume you rolled 20 on the d20
-- **Time**: Takes 20 times as long as normal attempt
-- **Limitation**: Cannot spend pool points, failure must be harmless
-
-### Inspiration and Rerolls
-
-#### Inspiration
-- GM awards for exceptional roleplay, clever ideas, or heroic acts
-- Can spend to gain advantage on any one roll
-- Or reroll any one die after seeing the result
-- Cannot combine with pool points for the same mechanical benefit
-
-#### Other Reroll Sources
-- Some abilities grant rerolls
-- Usually limited uses per day/encounter
-- Apply before pool point bonuses
-
-## Edge Mechanics Integration
-
-### Option A: Free Bonus (Recommended)
-- **Edge 1**: +1 to all rolls using that pool (no point cost)
-- **Edge 2**: +2 to all rolls using that pool (no point cost)  
-- **Edge 3**: +3 to all rolls using that pool (no point cost)
-
-### Option B: Efficiency
-- **Edge 1**: Spend 1 point, gain +2 bonus (first 2 points per roll)
-- **Edge 2**: Spend 1 point, gain +2 bonus (first 3 points per roll)
-- **Edge 3**: Spend 1 point, gain +2 bonus (first 4 points per roll)
-
-*Choose one option for consistency throughout your campaign*
-
-## Practical Examples
-
-### Example 1: Skill Check
-**Scenario**: Rogue picking a complex lock (DC 18)
-- **Character**: +3 proficiency, Edge 2 in DEX (+2 free)
-- **Pool Spending**: Spends 3 DEX points for safety
-- **Roll**: 1d20+3+2+3 = 1d20+8
-- **Needs**: 10 or higher on d20 to succeed
-
-### Example 2: Attack Roll  
-**Scenario**: Fighter attacking armored enemy (AC 16)
-- **Character**: +4 proficiency, spends 2 STR points
-- **Roll**: 1d20+4+2 = 1d20+6  
-- **Needs**: 10 or higher on d20 to hit
-- **Critical Hit**: Natural 20 doubles weapon damage dice
-
-### Example 3: Saving Throw
-**Scenario**: Wizard making CON save vs poison (DC 15)
-- **Character**: Not proficient in CON saves, Edge 1 in CON (+1 free)
-- **Pool Spending**: Spends 4 CON points (worried about failure)
-- **Roll**: 1d20+1+4 = 1d20+5
-- **Needs**: 10 or higher on d20 to resist poison
-
-### Example 4: Contested Roll
-**Scenario**: Bard vs Noble in debate (CHA vs CHA)
-- **Bard**: +3 proficiency, spends 2 CHA points = 1d20+5
-- **Noble**: +2 proficiency, spends 1 CHA point = 1d20+3
-- **Resolution**: Both roll, highest total wins argument
-
-## Integration Notes
-
-### Resource Management
-- Pool spending creates meaningful tactical decisions
-- Players must balance immediate success vs future capability
-- Edge makes characters reliable in their specialties
-
-### Compatibility
-- Works with all standard D&D DCs and mechanics
-- Maintains familiar d20 resolution feel
-- Pool points provide granular control over success chances
-
-### Game Flow
-- Declare spending before rolling keeps game moving
-- Clear success/failure results prevent arguments
-- Degrees of success encourage dramatic narration
+### Skill Synergies
+- **Combination Effects**: Some skill combinations provide special benefits
+- **Narrative Enhancement**: Skills can change how you approach problems
+- **Character Definition**: Your skill choices define your capabilities
 
 ---
 
-*This dice system provides the tactical depth of pool management while maintaining the familiar feel of d20 resolution.*
+*This dice system provides consistent, skill-based resolution without the complexity of resource spending, creating reliable character performance based on your allocation choices.*
