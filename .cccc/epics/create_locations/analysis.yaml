@@ -1,0 +1,260 @@
+# Epic Analysis: create_locations
+epic: create_locations
+analyzed: 2025-09-02T02:15:00Z
+stats:
+  total_issues: 25
+  phases: 4
+  sequential_hours: 56
+  parallel_hours: 22.5
+  speedup: 2.5
+  ready_to_start: 3
+
+# Phase execution order - optimized for maximum parallelization
+phases:
+  1: [001.1, 001.2, 001.3]  # Foundation phase - template creation
+  2: [002.1, 002.2, 002.3, 002.4, 003.1, 003.2, 003.3, 003.4, 004.1, 004.2, 004.3]  # Content creation - highly parallel
+  3: [005.1, 005.2, 005.3, 006.1, 006.2]  # Integration phase - parallel
+  4: [007.1, 007.2, 007.3, 008.1, 008.2]  # Quality and organization - sequential
+
+# All issue metadata
+issues:
+  001.1:
+    title: "Create location markdown template structure"
+    task: 1
+    phase: 1
+    estimate_minutes: 20
+    depends_on: []
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 150
+    body_file: issues/001.1.md
+  001.2:
+    title: "Develop visual style guide for maps"
+    task: 1
+    phase: 1
+    estimate_minutes: 25
+    depends_on: []
+    conflicts_with: []
+    files_modified: 2
+    max_loc: 200
+    body_file: issues/001.2.md
+  001.3:
+    title: "Create example location using template"
+    task: 1
+    phase: 1
+    estimate_minutes: 30
+    depends_on: [001.1]
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 300
+    body_file: issues/001.3.md
+  002.1:
+    title: "Create Port Maristos major trading hub"
+    task: 2
+    phase: 2
+    estimate_minutes: 240
+    depends_on: [001.1, 001.3]
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 800
+    body_file: issues/002.1.md
+  002.2:
+    title: "Create Thornwatch Citadel military stronghold"
+    task: 2
+    phase: 2
+    estimate_minutes: 240
+    depends_on: [001.1, 001.3]
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 800
+    body_file: issues/002.2.md
+  002.3:
+    title: "Create Crystalcove Academy magical center"
+    task: 2
+    phase: 2
+    estimate_minutes: 240
+    depends_on: [001.1, 001.3]
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 800
+    body_file: issues/002.3.md
+  002.4:
+    title: "Create Merchants Rest neutral trade port"
+    task: 2
+    phase: 2
+    estimate_minutes: 240
+    depends_on: [001.1, 001.3]
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 800
+    body_file: issues/002.4.md
+  003.1:
+    title: "Create Saltmere Fishing Village"
+    task: 3
+    phase: 2
+    estimate_minutes: 150
+    depends_on: [001.1, 001.3]
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 600
+    body_file: issues/003.1.md
+  003.2:
+    title: "Create Ironcliff Mining Outpost"
+    task: 3
+    phase: 2
+    estimate_minutes: 150
+    depends_on: [001.1, 001.3]
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 600
+    body_file: issues/003.2.md
+  003.3:
+    title: "Create Whisperwind Observatory"
+    task: 3
+    phase: 2
+    estimate_minutes: 150
+    depends_on: [001.1, 001.3]
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 600
+    body_file: issues/003.3.md
+  003.4:
+    title: "Create Driftwood Waystation"
+    task: 3
+    phase: 2
+    estimate_minutes: 150
+    depends_on: [001.1, 001.3]
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 600
+    body_file: issues/003.4.md
+  004.1:
+    title: "Create The Sunken Monastery ancient ruins"
+    task: 4
+    phase: 2
+    estimate_minutes: 210
+    depends_on: [001.1, 001.3]
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 700
+    body_file: issues/004.1.md
+  004.2:
+    title: "Create Stormcallers Peak natural wonder"
+    task: 4
+    phase: 2
+    estimate_minutes: 210
+    depends_on: [001.1, 001.3]
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 700
+    body_file: issues/004.2.md
+  004.3:
+    title: "Create The Singing Caverns magical phenomena"
+    task: 4
+    phase: 2
+    estimate_minutes: 210
+    depends_on: [001.1, 001.3]
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 700
+    body_file: issues/004.3.md
+  005.1:
+    title: "Create trade route and economic connections"
+    task: 5
+    phase: 3
+    estimate_minutes: 150
+    depends_on: [002.1, 002.2, 002.3, 002.4, 003.1, 003.2, 003.3, 003.4]
+    conflicts_with: [005.2, 005.3]
+    files_modified: 3
+    max_loc: 400
+    body_file: issues/005.1.md
+  005.2:
+    title: "Establish political relationships and factional influences"
+    task: 5
+    phase: 3
+    estimate_minutes: 150
+    depends_on: [002.1, 002.2, 002.3, 002.4, 003.1, 003.2, 003.3, 003.4]
+    conflicts_with: [005.1, 005.3]
+    files_modified: 3
+    max_loc: 400
+    body_file: issues/005.2.md
+  005.3:
+    title: "Create travel and navigation information"
+    task: 5
+    phase: 3
+    estimate_minutes: 150
+    depends_on: [002.1, 002.2, 002.3, 002.4, 003.1, 003.2, 003.3, 003.4]
+    conflicts_with: [005.1, 005.2]
+    files_modified: 2
+    max_loc: 300
+    body_file: issues/005.3.md
+  006.1:
+    title: "Compile and categorize all adventure hooks"
+    task: 6
+    phase: 3
+    estimate_minutes: 150
+    depends_on: [002.1, 002.2, 002.3, 002.4, 003.1, 003.2, 003.3, 003.4, 004.1, 004.2, 004.3]
+    conflicts_with: [006.2]
+    files_modified: 1
+    max_loc: 500
+    body_file: issues/006.1.md
+  006.2:
+    title: "Create mechanical integration and GM expansion notes"
+    task: 6
+    phase: 3
+    estimate_minutes: 150
+    depends_on: [006.1]
+    conflicts_with: []
+    files_modified: 1
+    max_loc: 400
+    body_file: issues/006.2.md
+  007.1:
+    title: "Perform lore and mechanical consistency validation"
+    task: 7
+    phase: 4
+    estimate_minutes: 240
+    depends_on: [005.1, 005.2, 005.3, 006.1, 006.2]
+    conflicts_with: []
+    files_modified: 0
+    max_loc: 0
+    body_file: issues/007.1.md
+  007.2:
+    title: "Conduct editorial and GM usability review"
+    task: 7
+    phase: 4
+    estimate_minutes: 240
+    depends_on: [007.1]
+    conflicts_with: []
+    files_modified: 0
+    max_loc: 0
+    body_file: issues/007.2.md
+  007.3:
+    title: "Create quality findings report and implement fixes"
+    task: 7
+    phase: 4
+    estimate_minutes: 150
+    depends_on: [007.2]
+    conflicts_with: []
+    files_modified: 3
+    max_loc: 200
+    body_file: issues/007.3.md
+  008.1:
+    title: "Organize location files and create navigation structure"
+    task: 8
+    phase: 4
+    estimate_minutes: 120
+    depends_on: [007.3]
+    conflicts_with: [008.2]
+    files_modified: 2
+    max_loc: 300
+    body_file: issues/008.1.md
+  008.2:
+    title: "Update master documents and create GM reference materials"
+    task: 8
+    phase: 4
+    estimate_minutes: 120
+    depends_on: [008.1]
+    conflicts_with: []
+    files_modified: 2
+    max_loc: 400
+    body_file: issues/008.2.md
