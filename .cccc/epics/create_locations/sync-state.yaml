@@ -10,6 +10,8 @@ issue_mappings:
     number: 2
     url: https://github.com/StudioMalfinio/malfinio/issues/2
     title: "Create location markdown template structure"
+    work_status: "completed"
+    work_completed: "2025-09-02T02:37:46Z"
   001.2:
     number: 3
     url: https://github.com/StudioMalfinio/malfinio/issues/3
