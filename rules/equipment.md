@@ -202,20 +202,45 @@ This equipment system provides the tools characters need for adventure, from wea
 
 ### Consumables
 
-#### Healing Items
-| Item | Effect | Cost |
-|------|--------|------|
-| Healing Potion | Restore 2d4+2 hit points | 50 gp |
-| Healing Salve | Restore 1d4+1 hit points, takes 10 minutes to apply | 25 gp |
-| Bandages (10) | Allow Medicine check to stabilize dying character | 2 gp |
+#### SP Recovery Items (Energy/Stamina)
+| Item | Effect | Cost | Grade |
+|------|--------|------|-------|
+| Vigor Tonic | Restore 1d4 SP | 25 gp | D |
+| Stamina Draught | Restore 2d4 SP | 50 gp | C |
+| Energy Elixir | Restore 3d4 SP | 100 gp | B |
+| Vitality Brew | Restore 4d4 SP | 200 gp | A |
+| Throwing Stimulant | Restore 2d4 SP (ranged, 30 feet) | 75 gp | C |
+| Combat Stim | Restore 1d4 SP (bonus action) | 40 gp | D |
+
+#### Injury Recovery Items (Healing)
+| Item | Effect | Cost | Grade |
+|------|--------|------|-------|
+| Basic Salve | Reduce recovery by 1d4 days | 30 gp | D |
+| Healing Ointment | Reduce recovery by 2d4 days | 60 gp | C |
+| Recovery Draught | Reduce recovery by 3d4 days | 120 gp | B |
+| Regeneration Oil | Reduce recovery by 4d4 days | 250 gp | A |
+| Wound Powder | Reduce recovery by 1d6 days | 80 gp | C |
+| Bandages (10) | Allow Medicine check to stabilize dying character | 2 gp | - |
 
 #### Pool Restoration
 | Item | Effect | Cost |
 |------|--------|------|
-| Stamina Draught | Restore 1d4 points to CON pool | 25 gp |
+| Constitution Elixir | Restore 1d4 points to CON pool | 25 gp |
 | Focus Elixir | Restore 1d4 points to INT or WIS pool | 30 gp |
-| Vigor Tonic | Restore 1d4 points to STR or DEX pool | 30 gp |
+| Vigor Draught | Restore 1d4 points to STR or DEX pool | 30 gp |
 | Confidence Brew | Restore 1d4 points to CHA pool | 25 gp |
+
+#### Industrial Magic Items (Bottled Spells)
+| Item | Effect | Cost | Grade |
+|------|--------|------|-------|
+| Fire Bomb | 3d6 fire damage, 10ft radius (thrown) | 75 gp | C |
+| Lightning Vial | 5d6 lightning damage, single target | 150 gp | B |
+| Frost Grenade | 2d8 cold damage, reduces movement | 60 gp | C |
+| Acid Flask | 2d6 acid damage over 3 rounds | 45 gp | D |
+| Shield Oil | +2 AC for 8 hours (applied to armor) | 100 gp | C |
+| Haste Elixir | Double movement for 1 minute | 300 gp | A |
+| Invisibility Draught | Invisible for 10 minutes | 500 gp | A |
+| Strength Enhancer | +4 STR for 1 hour | 120 gp | B |
 
 #### Utility Consumables
 | Item | Quantity | Effect | Cost |
