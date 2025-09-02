@@ -14,9 +14,11 @@ issue_mappings:
     pr_number: 26
     pr_url: "https://github.com/StudioMalfinio/malfinio/pull/26"
     pr_created: "2025-09-02T02:43:30Z"
+    pr_merged: "2025-09-02T02:46:11Z"
     last_updated: "2025-09-02T02:48:24Z"
     status: closed
     completed_at: "2025-09-02T02:47:26Z"
+    cleanup_completed: "2025-09-02T02:50:10Z"
   001.2:
     number: 3
     url: https://github.com/StudioMalfinio/malfinio/issues/3
