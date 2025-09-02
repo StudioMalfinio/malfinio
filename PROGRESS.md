@@ -1,4 +1,4 @@
-# TTRPG Development Progress
+# Malfinio System Development Progress
 
 *Last Updated: August 31, 2025*
 
@@ -108,10 +108,10 @@ Complete game system implemented - players can create characters, engage in tact
 4. **Develop world history** - Timeline and major events that inform current state
 
 ## Quick Reference
-- **Project Goal:** Hybrid TTRPG combining Cypher System pools with D&D 5e combat
+- **Project Goal:** Malfinio system combining Cypher System pools with D&D 5e combat
 - **Key Innovation:** Grid-based tactical combat with simplified distance calculation
 - **Current Reality:** Phase 2 complete! Moving to strategic worldbuilding before documentation
-- **Success Metrics:** Complete ruleset, successful playtests, functional digital tools
+- **Success Metrics:** Complete Malfinio ruleset, successful playtests, functional digital tools
 
 ---
 *STRATEGIC PIVOT: Phase 2 complete! Pivoting to worldbuilding to allow setting details to inform final rule refinements before documentation.*

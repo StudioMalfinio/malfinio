@@ -1,8 +1,8 @@
-# Hybrid TTRPG Development Roadmap
+# Malfinio System Development Roadmap
 *A tactical RPG combining Cypher System pools with D&D 5e combat and character depth*
 
 ## Project Vision
-Create a tabletop RPG that combines:
+Create the **Malfinio system**, a tabletop RPG that combines:
 - **Pool Allocation System**: Six-pool skill allocation (STR/DEX/CON/INT/WIS/CHA), strategic character building
 - **D&D 5e**: Tactical combat, rich skill system, detailed character progression
 - **Simplified Distance**: Remove complex range calculations while maintaining tactical positioning
@@ -207,7 +207,7 @@ Create a tabletop RPG that combines:
 ```
 
 ## Success Metrics
-- [ ] Complete, playable rule set
+- [ ] Complete, playable Malfinio rule set
 - [ ] Successful 4+ hour playtest sessions
 - [ ] Functional player and GM digital agents
 - [ ] Positive feedback on tactical combat without distance complexity

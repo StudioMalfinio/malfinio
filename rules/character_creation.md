@@ -1,6 +1,6 @@
 # Character Creation System
 
-*Complete framework for creating characters in the hybrid TTRPG system*
+*Complete framework for creating characters in the Malfinio system*
 
 ## Overview
 
@@ -436,4 +436,4 @@ Instead of traditional feats, characters can choose specialized pool improvement
 
 ---
 
-*This character creation system provides the foundation for diverse, mechanically interesting characters while maintaining the tactical resource management that defines the hybrid system.*
+*This character creation system provides the foundation for diverse, mechanically interesting characters while maintaining the tactical resource management that defines the Malfinio system.*
