@@ -3,7 +3,6 @@ project_path: StudioMalfinio/malfinio
 last_sync: 2025-09-02T02:24:27Z
 epic_number: 1
 epic_url: https://github.com/StudioMalfinio/malfinio/issues/1
-
 # Issue mappings
 issue_mappings:
   001.1:
@@ -15,6 +14,9 @@ issue_mappings:
     pr_number: 26
     pr_url: "https://github.com/StudioMalfinio/malfinio/pull/26"
     pr_created: "2025-09-02T02:43:30Z"
+    last_updated: "2025-09-02T02:48:24Z"
+    status: closed
+    completed_at: "2025-09-02T02:47:26Z"
   001.2:
     number: 3
     url: https://github.com/StudioMalfinio/malfinio/issues/3
