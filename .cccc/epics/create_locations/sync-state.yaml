@@ -1,0 +1,104 @@
+platform: github
+project_path: StudioMalfinio/malfinio
+last_sync: 2025-09-02T02:24:27Z
+epic_number: 1
+epic_url: https://github.com/StudioMalfinio/malfinio/issues/1
+
+# Issue mappings
+issue_mappings:
+  001.1:
+    number: 2
+    url: https://github.com/StudioMalfinio/malfinio/issues/2
+    title: "Create location markdown template structure"
+  001.2:
+    number: 3
+    url: https://github.com/StudioMalfinio/malfinio/issues/3
+    title: "Develop visual style guide for maps"
+  001.3:
+    number: 4
+    url: https://github.com/StudioMalfinio/malfinio/issues/4
+    title: "Create example location using template"
+  002.1:
+    number: 5
+    url: https://github.com/StudioMalfinio/malfinio/issues/5
+    title: "Create Port Maristos major trading hub"
+  002.2:
+    number: 6
+    url: https://github.com/StudioMalfinio/malfinio/issues/6
+    title: "Create Thornwatch Citadel military stronghold"
+  002.3:
+    number: 7
+    url: https://github.com/StudioMalfinio/malfinio/issues/7
+    title: "Create Crystalcove Academy magical center"
+  002.4:
+    number: 8
+    url: https://github.com/StudioMalfinio/malfinio/issues/8
+    title: "Create Merchants Rest neutral trade port"
+  003.1:
+    number: 9
+    url: https://github.com/StudioMalfinio/malfinio/issues/9
+    title: "Create Saltmere Fishing Village"
+  003.2:
+    number: 10
+    url: https://github.com/StudioMalfinio/malfinio/issues/10
+    title: "Create Ironcliff Mining Outpost"
+  003.3:
+    number: 11
+    url: https://github.com/StudioMalfinio/malfinio/issues/11
+    title: "Create Whisperwind Observatory"
+  003.4:
+    number: 12
+    url: https://github.com/StudioMalfinio/malfinio/issues/12
+    title: "Create Driftwood Waystation"
+  004.1:
+    number: 13
+    url: https://github.com/StudioMalfinio/malfinio/issues/13
+    title: "Create The Sunken Monastery ancient ruins"
+  004.2:
+    number: 14
+    url: https://github.com/StudioMalfinio/malfinio/issues/14
+    title: "Create Stormcallers Peak natural wonder"
+  004.3:
+    number: 15
+    url: https://github.com/StudioMalfinio/malfinio/issues/15
+    title: "Create The Singing Caverns magical phenomena"
+  005.1:
+    number: 16
+    url: https://github.com/StudioMalfinio/malfinio/issues/16
+    title: "Create trade route and economic connections"
+  005.2:
+    number: 17
+    url: https://github.com/StudioMalfinio/malfinio/issues/17
+    title: "Establish political relationships and factional influences"
+  005.3:
+    number: 18
+    url: https://github.com/StudioMalfinio/malfinio/issues/18
+    title: "Create travel and navigation information"
+  006.1:
+    number: 19
+    url: https://github.com/StudioMalfinio/malfinio/issues/19
+    title: "Compile and categorize all adventure hooks"
+  006.2:
+    number: 20
+    url: https://github.com/StudioMalfinio/malfinio/issues/20
+    title: "Create mechanical integration and GM expansion notes"
+  007.1:
+    number: 21
+    url: https://github.com/StudioMalfinio/malfinio/issues/21
+    title: "Perform lore and mechanical consistency validation"
+  007.2:
+    number: 22
+    url: https://github.com/StudioMalfinio/malfinio/issues/22
+    title: "Conduct editorial and GM usability review"
+  007.3:
+    number: 23
+    url: https://github.com/StudioMalfinio/malfinio/issues/23
+    title: "Create quality findings report and implement fixes"
+  008.1:
+    number: 24
+    url: https://github.com/StudioMalfinio/malfinio/issues/24
+    title: "Organize location files and create navigation structure"
+  008.2:
+    number: 25
+    url: https://github.com/StudioMalfinio/malfinio/issues/25
+    title: "Update master documents and create GM reference materials"
